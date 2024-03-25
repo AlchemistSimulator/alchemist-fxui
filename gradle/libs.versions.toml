@@ -2,7 +2,7 @@
 alchemist = "32.0.1"
 dokka = "1.9.10"
 junit = "5.10.2"
-kotlin = "1.9.22"
+kotlin = "1.9.23"
 
 [libraries]
 alchemist-api = { module = "it.unibo.alchemist:alchemist-api", version.ref = "alchemist" }
