@@ -1,3 +1,10 @@
+## [32.1.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.1.0...32.1.1) (2024-03-26)
+
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v1.9.20 ([01ce9d1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/01ce9d1c7b1fe3a25dd2f3e194ef62b5e0cec318))
+
 ## [32.1.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.0.1...32.1.0) (2024-03-26)
 
 
