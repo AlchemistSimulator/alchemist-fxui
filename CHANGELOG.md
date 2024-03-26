@@ -1,3 +1,30 @@
+## [32.1.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.0.1...32.1.0) (2024-03-26)
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v32 ([6ea729c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6ea729ce15d43e4010bdc0e9bb8013486c0fc64b))
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.23 ([a442925](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a442925a5b765edc7d652895fef52bed67307259))
+* **deps:** update dependency com.google.guava:guava to v33.1.0-jre ([5dad5c4](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5dad5c45e19991e6e62818ee11d8ba162e18802d))
+* **deps:** update dependency org.controlsfx:controlsfx to v11.2.1 ([a8b4e39](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a8b4e39d643c46bededcdf1ebd278c74ba1c3649))
+* **deps:** update plugin gitsemver to v3.1.4 ([48d4424](https://github.com/AlchemistSimulator/alchemist-fxui/commit/48d4424e2af29cd4ea267915223971ab97e4142f))
+* **deps:** update plugin java-qa to v1.41.0 ([db0bfb2](https://github.com/AlchemistSimulator/alchemist-fxui/commit/db0bfb288f9110f669d715a9852c888088df62dd))
+* **deps:** update plugin kotlin-qa to v0.61.0 ([04e624b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/04e624bf852472eac20a27a8344ff849f4f7eb50))
+* **deps:** update plugin publishoncentral to v5.0.26 ([a116905](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a1169058c6753056e2d8522505f9055894252dea))
+
+
+### Documentation
+
+* add a readme title ([3210d75](https://github.com/AlchemistSimulator/alchemist-fxui/commit/3210d7570d40b6da8d12a84b85903772e570f236))
+
+
+### Build and continuous integration
+
+* add scmConnection and projectUrl ([bcab3b3](https://github.com/AlchemistSimulator/alchemist-fxui/commit/bcab3b38b20aa21f36484ef7ed656e5b64e24b7c))
+* **mergify:** use the shared mergify config ([70bc660](https://github.com/AlchemistSimulator/alchemist-fxui/commit/70bc660dab7b5695e3cb3e269ba737b928fe6227))
+* **release:** checkout the repository with the default actions token ([17a332c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/17a332c4fd6958a360e3447fc05597d07030ceec))
+* require write permissions for the release token ([9b4d644](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9b4d644a9c7a0436ea85efcd34b2766d332c5d5d))
+
 ## [0.1.22](https://github.com/DanySK/Template-for-Kotlin-JVM-Projects/compare/0.1.21...0.1.22) (2024-03-07)
 
 
