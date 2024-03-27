@@ -1,5 +1,5 @@
 [versions]
-alchemist = "33.0.2"
+alchemist = "33.0.4"
 dokka = "1.9.20"
 junit = "5.10.2"
 kotlin = "1.9.23"
