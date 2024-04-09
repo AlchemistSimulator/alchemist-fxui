@@ -1,3 +1,15 @@
+## [32.7.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.6.0...32.7.0) (2024-04-09)
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v33.0.6 ([4833a96](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4833a96bfb99006a179a3a9febcf2e747d683250))
+* **deps:** update dependency com.github.spotbugs:spotbugs-annotations to v4.8.4 ([c932e65](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c932e659a944ea81412a1138028c92615241c4ef))
+* **deps:** update plugin com.gradle.enterprise to v3.17.1 ([1dfb46e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/1dfb46ea45fd22a6cf05ff46e8ddef2d2fda4b7e))
+* **deps:** update plugin java-qa to v1.43.1 ([5e8f3ff](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5e8f3ff10d0eb50c592e0804ca960ee85b99848d))
+* **deps:** update plugin java-qa to v1.44.0 ([25b5aaf](https://github.com/AlchemistSimulator/alchemist-fxui/commit/25b5aaf56f4c1610e7f4927ae8a3fc48ae026d14))
+* **deps:** update plugin publishoncentral to v5.1.0 ([6a497c4](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6a497c42bbb2beb604704b555d9844817ab3f566))
+
 ## [32.6.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.5.0...32.6.0) (2024-04-04)
 
 
