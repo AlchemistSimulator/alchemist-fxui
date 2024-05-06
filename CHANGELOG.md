@@ -1,3 +1,13 @@
+## [32.13.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.12.0...32.13.0) (2024-05-06)
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34 ([4a89484](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4a89484a87a2969499885f135f4415d9e1d0a204))
+* **deps:** update dependency com.github.spotbugs:spotbugs-annotations to v4.8.5 ([fd38fe5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/fd38fe524aaa6f0a8d7b677862972bcd6f34f619))
+* **deps:** update plugin java-qa to v1.49.0 ([c595662](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c595662c60e9afce352c4eaf70e43468c918e096))
+* **deps:** update plugin java-qa to v1.50.0 ([ac7fec8](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ac7fec8e7b9dee52bdb02f19caa763e0ce9e3607))
+
 ## [32.12.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.11.0...32.12.0) (2024-05-03)
 
 
