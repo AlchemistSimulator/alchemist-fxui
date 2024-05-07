@@ -1,3 +1,13 @@
+## [32.13.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.13.0...32.13.1) (2024-05-07)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.24 ([30dca27](https://github.com/AlchemistSimulator/alchemist-fxui/commit/30dca27075df21db40e1a32f647236fddd5db0cb))
+* **deps:** update plugin gitsemver to v3.1.5 ([260b6d0](https://github.com/AlchemistSimulator/alchemist-fxui/commit/260b6d07e2f5dad9de86f3cde891f55ddb103a49))
+* **deps:** update plugin kotlin-qa to v0.61.1 ([787ae81](https://github.com/AlchemistSimulator/alchemist-fxui/commit/787ae8180533fcaef855cdd4123c4c24a9bc5590))
+* **deps:** update plugin publishoncentral to v5.1.1 ([05dd393](https://github.com/AlchemistSimulator/alchemist-fxui/commit/05dd3933a1325902e2803fa5a76dceee04015720))
+
 ## [32.13.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.12.0...32.13.0) (2024-05-06)
 
 
