@@ -1,3 +1,11 @@
+## [32.14.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.13.1...32.14.0) (2024-05-07)
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.0.2 ([5f785bc](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5f785bc490f6f29786dbfbcefbe8c1711b5029bf))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.5 ([32ca767](https://github.com/AlchemistSimulator/alchemist-fxui/commit/32ca767b5dc685eafeb1e29b1f080fb26164343e))
+
 ## [32.13.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.13.0...32.13.1) (2024-05-07)
 
 
