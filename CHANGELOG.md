@@ -1,3 +1,10 @@
+## [32.17.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.16.0...32.17.0) (2024-05-13)
+
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.0.5 ([103a6fd](https://github.com/AlchemistSimulator/alchemist-fxui/commit/103a6fdb34eea65a15469bab7eb3842a9dea2ac2))
+
 ## [32.16.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.15.0...32.16.0) (2024-05-10)
 
 
