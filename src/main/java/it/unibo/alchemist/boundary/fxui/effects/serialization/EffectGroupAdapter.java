@@ -47,7 +47,7 @@ public class EffectGroupAdapter<P extends Position2D<? extends P>>
     /**
      * Type of {@link List}<{@link EffectFX}>.
      */
-    private final Type effectsListType = new TypeToken<List<EffectFX<P>>>() {
+    private final Type effectsListType = new TypeToken<List<EffectFX<?>>>() {
     }.getType();
 
     /**

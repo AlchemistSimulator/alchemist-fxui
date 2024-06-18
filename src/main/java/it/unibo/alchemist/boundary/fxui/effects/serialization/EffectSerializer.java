@@ -101,6 +101,11 @@ public final class EffectSerializer {
      */
     private static final String TARGET_METHOD_NAME = "getTypeAdapter";
 
+    private static final TypeToken<EffectFX<?>> EFFECT_TYPE = new TypeToken<>() { };
+    private static final TypeToken<EffectGroup<?>> GROUP_TYPE = new TypeToken<>() { };
+    private static final TypeToken<List<EffectGroup<?>>> MULTI_GROUPS_TYPE = new TypeToken<>() { };
+    private static final TypeToken<Color> COLOR_TYPE = new TypeToken<>() { };
+
     /**
      * Google GSON object that concretely serializes and deserializes objects.
      */
@@ -111,8 +116,7 @@ public final class EffectSerializer {
         EFFECTS.forEach(RTA_EFFECT::registerSubtype);
         GROUPS.forEach(RTA_GROUP::registerSubtype);
         final GsonBuilder builder = new GsonBuilder();
-        builder.registerTypeAdapter(new TypeToken<Color>() {
-        }.getType(), new ColorSerializationAdapter());
+        builder.registerTypeAdapter(COLOR_TYPE.getType(), new ColorSerializationAdapter());
         registerTypeAdaptersFor(builder, PROPERTIES);
         registerTypeAdaptersFor(builder, GROUPS);
         GSON = builder
@@ -171,7 +175,7 @@ public final class EffectSerializer {
      * @throws com.google.gson.JsonSyntaxException If JSON is not a valid representation for an object of type
      * @throws IOException         If some other I/O error occurs
      */
-    private static <T> T load(final Reader reader, final TypeToken<T> type) throws IOException {
+    private static <T> T load(final Reader reader, final TypeToken<?> type) throws IOException {
         final T deserialized = GSON.fromJson(reader, type.getType());
         reader.close();
         return deserialized;
@@ -187,7 +191,7 @@ public final class EffectSerializer {
      * @throws com.google.gson.JsonIOException If there was a problem writing to the writer
      * @throws IOException     If some other I/O error occurs
      */
-    private static <T> void save(final Writer writer, final T object, final TypeToken<T> type) throws IOException {
+    private static <T> void save(final Writer writer, final T object, final TypeToken<?> type) throws IOException {
         GSON.toJson(object, type.getType(), writer);
         writer.close();
     }
@@ -209,7 +213,7 @@ public final class EffectSerializer {
     public static <P extends Position2D<? extends P>> EffectFX<P> effectFromFile(
             final File effectFile
     ) throws IOException {
-        return load(new FileReader(effectFile, DEFAULT_CHARSET), new TypeToken<>() { });
+        return load(new FileReader(effectFile, DEFAULT_CHARSET), EFFECT_TYPE);
     }
 
     /**
@@ -231,7 +235,7 @@ public final class EffectSerializer {
     ) throws IOException {
         return load(
                 new InputStreamReader(ResourceLoader.getResourceAsStream(resource), DEFAULT_CHARSET),
-                new TypeToken<>() { }
+                EFFECT_TYPE
             );
     }
 
@@ -250,7 +254,7 @@ public final class EffectSerializer {
             final File effectFile,
             final EffectFX<P> effect
     ) throws IOException {
-        save(new FileWriter(effectFile, DEFAULT_CHARSET), effect, new TypeToken<>() { });
+        save(new FileWriter(effectFile, DEFAULT_CHARSET), effect, EFFECT_TYPE);
     }
 
     /**
@@ -270,7 +274,7 @@ public final class EffectSerializer {
     public static <P extends Position2D<? extends P>> EffectGroup<P> effectsFromFile(
             final File effectFile
     ) throws IOException {
-        return load(new FileReader(effectFile, DEFAULT_CHARSET), new TypeToken<>() { });
+        return load(new FileReader(effectFile, DEFAULT_CHARSET), GROUP_TYPE);
     }
 
     /**
@@ -292,7 +296,7 @@ public final class EffectSerializer {
     ) throws IOException {
         return load(
                 new InputStreamReader(ResourceLoader.getResourceAsStream(resource), DEFAULT_CHARSET),
-                new TypeToken<>() { }
+                GROUP_TYPE
             );
     }
 
@@ -311,7 +315,7 @@ public final class EffectSerializer {
             final File effectFile,
             final EffectGroup<P> effects
     ) throws IOException {
-        save(new FileWriter(effectFile, DEFAULT_CHARSET), effects, new TypeToken<>() { });
+        save(new FileWriter(effectFile, DEFAULT_CHARSET), effects, GROUP_TYPE);
     }
 
     /**
@@ -331,7 +335,7 @@ public final class EffectSerializer {
     public static <P extends Position2D<? extends P>> List<EffectGroup<P>> effectGroupsFromFile(
             final File effectFile
     ) throws IOException {
-        return load(new FileReader(effectFile, DEFAULT_CHARSET), new TypeToken<>() { });
+        return load(new FileReader(effectFile, DEFAULT_CHARSET), MULTI_GROUPS_TYPE);
     }
 
     /**
@@ -353,7 +357,7 @@ public final class EffectSerializer {
     ) throws IOException {
         return load(
                 new InputStreamReader(ResourceLoader.getResourceAsStream(resource), DEFAULT_CHARSET),
-                new TypeToken<>() { }
+                GROUP_TYPE
             );
     }
 
@@ -372,7 +376,7 @@ public final class EffectSerializer {
             final File effectFile,
             final List<EffectGroup<P>> effects
     ) throws IOException {
-        save(new FileWriter(effectFile, DEFAULT_CHARSET), effects, new TypeToken<>() { });
+        save(new FileWriter(effectFile, DEFAULT_CHARSET), effects, MULTI_GROUPS_TYPE);
     }
 
     /**
