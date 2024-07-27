@@ -1,3 +1,33 @@
+## [32.20.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.19.0...32.20.0) (2024-07-27)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.0.14 ([ff03a1f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ff03a1ff924742975ea0f1499388cfbd1a1ad96d))
+* **deps:** update dependency gradle to v8.9 ([f8d8f7d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f8d8f7d18d05eb57002a6d7f7b0d4afb02b6d890))
+* **deps:** update dependency org.danilopianini:thread-inheritable-resource-loader to v0.3.7 ([3be9cb1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/3be9cb1e2badcbb4195642d9878e29631b35998b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.91 ([44f11f5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/44f11f5b0cf4d00f134c4ffdb53c81bf1eec43ec))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.92 ([0f20623](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0f20623fb7f22b739c3909e4f870220fe5e11279))
+* **deps:** update junit5 monorepo to v5.10.3 ([f4ad23d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f4ad23d5261cb626d6affcca38c11688cbbfdbb4))
+* **deps:** update node.js to 20.15 ([04e3aad](https://github.com/AlchemistSimulator/alchemist-fxui/commit/04e3aadf306ab0dd53497781be859a3dd86264b7))
+* **deps:** update plugin com.gradle.develocity to v3.17.6 ([7691555](https://github.com/AlchemistSimulator/alchemist-fxui/commit/76915555effc56099545157e03f77fe5ca515e78))
+* **deps:** update plugin java-qa to v1.57.1 ([a13ecda](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a13ecda73ec48f93d675e4352269c2690637d9fa))
+* **deps:** update plugin kotlin-qa to v0.62.4 ([14c416f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/14c416f9a8211cd6b70ecf3b3337d45465c173f1))
+* **deps:** update plugin kotlin-qa to v0.63.0 ([b564c9a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b564c9a6efb0c1d80b398e8684851351fd8bd580))
+* **deps:** update plugin kotlin-qa to v0.64.0 ([a4241ae](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a4241ae173255c391d64e547f3d54b6575a0d02d))
+* **deps:** update plugin multijvmtesting to v1 ([0e42fcf](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0e42fcf8f2dfddbbed682d95225e05bb766405b6))
+* **deps:** update plugin multijvmtesting to v1.1.1 ([ae1d5f1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ae1d5f1c6b243fbb22e22fb9528faa45e6664ba5))
+* **deps:** update plugin multijvmtesting to v1.2.2 ([60aaab1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/60aaab175c6e24cd8183e69f741d85303db6d4fe))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.8 ([82d5578](https://github.com/AlchemistSimulator/alchemist-fxui/commit/82d5578eafb22cda64a86ae9842f334003e2e7eb))
+* **deps:** update plugin publishoncentral to v5.1.4 ([5e077d9](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5e077d9ebffbf29439107f94a2dd5ab9842a10ad))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.0.3 ([f72cc63](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f72cc6312161d2635645afc04934c6f843b1e9cc))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.3.0 ([8b38e04](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8b38e04dc861e9c148fff2e938c9b7d48d388414))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.4.0 ([c7fba33](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c7fba33dab7367ca755755e12962c28b2b319964))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.0 ([37ff2d2](https://github.com/AlchemistSimulator/alchemist-fxui/commit/37ff2d2bbcd0916d3608f8c025b48bc325604633))
+* use the token when publishing on codecov ([b3268d0](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b3268d03b22d7f1548358a011e8d0cfc44d4c725))
+
 ## [32.19.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.18.1...32.19.0) (2024-06-19)
 
 
