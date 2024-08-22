@@ -1,3 +1,10 @@
+## [32.27.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.27.0...32.27.1) (2024-08-22)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.0.20 ([134af2f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/134af2f69bf66ab471f7b1c6a3f2712864ace166))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.98 ([99c887d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/99c887d785d6946a6b74b0826d501b3b46d57b03))
+
 ## [32.27.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.26.1...32.27.0) (2024-08-21)
 
 ### Dependency updates
