@@ -1,3 +1,10 @@
+## [32.29.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.28.0...32.29.0) (2024-08-23)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.1.2 ([b4d8824](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b4d8824c9d55f958f2f043b8928bbff935bc835b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.99 ([7244b31](https://github.com/AlchemistSimulator/alchemist-fxui/commit/7244b31cd83521d6c7d2e18c83e5f3f5b1a0c141))
+
 ## [32.28.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.27.1...32.28.0) (2024-08-23)
 
 ### Dependency updates
