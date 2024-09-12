@@ -64,11 +64,11 @@ class EffectSerializerTest {
         try (Writer writer = new FileWriter(file, Charsets.UTF_8)) {
             EffectSerializer.getGSON().toJson(effects, type, writer);
         }
-        List<EffectFX<Position2D<? extends Position2D<?>>>> deserialized;
         try (Reader reader = new FileReader(file, Charsets.UTF_8)) {
-            deserialized = EffectSerializer.getGSON().fromJson(reader, type);
+            final List<EffectFX<Position2D<? extends Position2D<?>>>> deserialized =
+                EffectSerializer.getGSON().fromJson(reader, type);
+            assertEquals(effects, deserialized);
         }
-        assertEquals(effects, deserialized);
     }
 
     /**
