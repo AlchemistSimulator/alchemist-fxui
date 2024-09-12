@@ -143,7 +143,8 @@ class RangedDoubleProperty @JvmOverloads constructor(
         abs(lowerBound - other.lowerBound) < Double.MIN_VALUE &&
         abs(upperBound - other.upperBound) < Double.MIN_VALUE
 
-    companion object {
+    private companion object {
+
         private const val serialVersionUID: Long = 1L
 
         /**
