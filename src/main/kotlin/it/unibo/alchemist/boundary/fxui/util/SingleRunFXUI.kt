@@ -44,6 +44,9 @@ class SingleRunFXUI(
         }
     }
 
+    /**
+     * Container of constants.
+     */
     companion object {
         /**
          * Default visual effects.
