@@ -19,14 +19,50 @@ import kotlin.math.min
  * @param y the Y-value. Grows positively upwards.
  */
 enum class Direction2D(val x: Int, val y: Int) {
+
+    /**
+     * No movement.
+     */
     NONE(0, 0),
+
+    /**
+     * Movement to the north.
+     */
     NORTH(0, 1),
+
+    /**
+     * Movement to the south.
+     */
     SOUTH(0, -1),
+
+    /**
+     * Movement to the east.
+     */
     EAST(1, 0),
+
+    /**
+     * Movement to the west.
+     */
     WEST(-1, 0),
+
+    /**
+     * Movement to the northeast.
+     */
     NORTHEAST(1, 1),
+
+    /**
+     * Movement to the southeast.
+     */
     SOUTHEAST(1, -1),
+
+    /**
+     * Movement to the southwest.
+     */
     SOUTHWEST(-1, -1),
+
+    /**
+     * Movement to the northwest.
+     */
     NORTHWEST(-1, 1),
     ;
 
