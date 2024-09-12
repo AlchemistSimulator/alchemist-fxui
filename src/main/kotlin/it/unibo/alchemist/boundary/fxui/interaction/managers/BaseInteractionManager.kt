@@ -319,10 +319,10 @@ class BaseInteractionManager<T, P : Position2D<P>>(
             graphics.fill = paint
             nodes[node]?.run(wormhole::getViewPoint)?.let {
                 graphics.fillOval(
-                    it.x - highlightSize / 2,
-                    it.y - highlightSize / 2,
-                    highlightSize,
-                    highlightSize,
+                    it.x - HIGHLIGHT_SIZE / 2,
+                    it.y - HIGHLIGHT_SIZE / 2,
+                    HIGHLIGHT_SIZE,
+                    HIGHLIGHT_SIZE,
                 )
             }
         }
@@ -396,7 +396,7 @@ class BaseInteractionManager<T, P : Position2D<P>>(
         /**
          * The size (radius) of the highlights.
          */
-        const val highlightSize = 10.0
+        private const val HIGHLIGHT_SIZE = 10.0
 
         /**
          * Empiric zoom scale value.
