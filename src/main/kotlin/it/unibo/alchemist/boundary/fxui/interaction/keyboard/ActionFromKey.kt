@@ -13,16 +13,59 @@ package it.unibo.alchemist.boundary.fxui.interaction.keyboard
  * Actions which can be bound to a key on the keyboard.
  */
 enum class ActionFromKey(private val description: String) {
+    /**
+     * Control modifier.
+     */
     MODIFIER_CONTROL("Control modifier"),
+
+    /**
+     * Shift modifier.
+     */
     MODIFIER_SHIFT("Shift modifier"),
+
+    /**
+     * Pan north.
+     */
     PAN_NORTH("Pan north"),
+
+    /**
+     * Pan south.
+     */
     PAN_SOUTH("Pan south"),
+
+    /**
+     * Pan east.
+     */
     PAN_EAST("Pan east"),
+
+    /**
+     * Pan west.
+     */
     PAN_WEST("Pan west"),
+
+    /**
+     * Deletion.
+     */
     DELETE("Delete"),
+
+    /**
+     * Move.
+     */
     MOVE("Move"),
+
+    /**
+     * Edit.
+     */
     EDIT("Edit"),
+
+    /**
+     * Play and Pause.
+     */
     PLAY_AND_PAUSE("Play and Pause"),
+
+    /**
+     * Forward one step.
+     */
     ONE_STEP("Forward one step"),
     ;
 
