@@ -11,14 +11,42 @@ package it.unibo.alchemist.boundary.fxui.interaction.mouse
 
 /**
  * Actions that can happen on a mouse and a certain mouse button.
- * The enum's values are based on JavaFX's mouse events, such as onMouseClicked
+ * The enum's values are based on JavaFX's mouse events, such as onMouseClicked:
+ * [CLICKED], [DRAGGED], [ENTERED], [EXITED], [MOVED], [PRESSED], [RELEASED].
  */
 enum class ActionOnMouse {
+    /**
+     * The mouse button was clicked.
+     */
     CLICKED,
+
+    /**
+     * The mouse button was dragged.
+     */
     DRAGGED,
+
+    /**
+     * The mouse entered the area.
+     */
     ENTERED,
+
+    /**
+     * The mouse exited the area.
+     */
     EXITED,
+
+    /**
+     * The mouse was moved.
+     */
     MOVED,
+
+    /**
+     * The mouse button was pressed.
+     */
     PRESSED,
+
+    /**
+     * The mouse button was released.
+     */
     RELEASED,
 }
