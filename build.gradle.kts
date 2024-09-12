@@ -34,12 +34,8 @@ multiJvm {
 }
 
 kotlin {
-    target {
-        compilations.all {
-            kotlinOptions {
-                allWarningsAsErrors = true
-            }
-        }
+    compilerOptions {
+        allWarningsAsErrors = true
     }
 }
 
