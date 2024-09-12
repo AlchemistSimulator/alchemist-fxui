@@ -1,3 +1,46 @@
+## [32.30.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.30.0...32.30.1) (2024-09-12)
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.10.1 ([590c8fc](https://github.com/AlchemistSimulator/alchemist-fxui/commit/590c8fcac52d070fedb921e7fa391be1253e281d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.102 ([07cef03](https://github.com/AlchemistSimulator/alchemist-fxui/commit/07cef038214205c3b54ddd660ab8a3e788fc454f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.103 ([6743a6e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6743a6e32daeb701c5f70f6ec63bc5b0541dce13))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.104 ([b3c11e6](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b3c11e655f8c936381cab3b4bb74de544ac72a98))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.105 ([ab641a3](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ab641a36cbfc9de07cc6999c57c34baf340488ee))
+* **deps:** update plugin com.gradle.develocity to v3.18.1 ([0116536](https://github.com/AlchemistSimulator/alchemist-fxui/commit/01165363d4ce94543295994ab3bde3032af226a7))
+* **deps:** update plugin kotlin-qa to v0.66.1 ([34807ce](https://github.com/AlchemistSimulator/alchemist-fxui/commit/34807cebac5a5d2828200bf2ac2c37bdcbdc273c))
+* **deps:** update plugin multijvmtesting to v1.2.6 ([fa25b1b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/fa25b1b4d75d42a2a9201ab94892248aadbd80b8))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.10 ([f06acf0](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f06acf0585243fb1d4ade89324b0e190ceb9ba87))
+
+### Documentation
+
+* document `ActionFromKey` ([343b995](https://github.com/AlchemistSimulator/alchemist-fxui/commit/343b995dff4f4b888b07a4c5fa28f9f61bc45e29))
+* document `ActionOnKey` ([e009be4](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e009be4fe7fee361421df5f952555686b50b2d7b))
+* document `ActionOnMouse` ([246a271](https://github.com/AlchemistSimulator/alchemist-fxui/commit/246a271cf3ba147ba30af39a6dcb527a155f7a44))
+* document `CustomLeafletMapView.Companion` ([9ecb34e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9ecb34eb267568828f81d289b6263bca67136729))
+* document `Direction2D` ([14bf209](https://github.com/AlchemistSimulator/alchemist-fxui/commit/14bf2090e120517815de900f3984dc37074e9c39))
+* document `Keybinder.Companion` ([8df5493](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8df5493514b3368913538ca5b08bc59f6321e8f1))
+* document `SingleRunFXUI.Companion` ([3663603](https://github.com/AlchemistSimulator/alchemist-fxui/commit/3663603de8cc646c980e591c303bb6f1208826ce))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.5 ([6dd5335](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6dd53352cb665d7cb3603406a6ea838af78d949d))
+* migrate to the compilerOptions DSL ([4b39651](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4b39651706b4dc9f6aa2f687a6c3497d2d82ab09))
+
+### Style improvements
+
+* make local variable final ([905943b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/905943b3d0179f9e79f0e22a697ec64d3ae8c185))
+
+### Refactoring
+
+* fix constant name format ([317bbdf](https://github.com/AlchemistSimulator/alchemist-fxui/commit/317bbdf507eabe12f4cef249b1b69a1ecd39ae54))
+* rename constant ([2284593](https://github.com/AlchemistSimulator/alchemist-fxui/commit/2284593eec85ff584dd08055c6e9c77ba0d222a2))
+* restrict visibility of `BaseFXDisplay.Companion` ([4bfae83](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4bfae833901aa954b056a422c016ccba5632444f))
+* restrict visibility of `BaseInteractionManager.Companion` ([072a8fd](https://github.com/AlchemistSimulator/alchemist-fxui/commit/072a8fd2364b13217b82b1e64aae150fbc56eeae))
+* restrict visibility of `LeafletMapWormhole.Companion` ([dcf9cdd](https://github.com/AlchemistSimulator/alchemist-fxui/commit/dcf9cdda7f92c5819c4640d4b0f7b0e4d7262d52))
+* restrict visibility of `ListKeybindsView.Companion` ([b0caa41](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b0caa41e0df2acdbf8079d9fc898adad2100c8b1))
+* restrict visibility of `RangedDoubleProperty.Companion` ([ee4c1de](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ee4c1de9e2bcfe1acf8494d77b1392c5a0ca0f22))
+
 ## [32.30.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.29.0...32.30.0) (2024-08-30)
 
 ### Dependency updates
