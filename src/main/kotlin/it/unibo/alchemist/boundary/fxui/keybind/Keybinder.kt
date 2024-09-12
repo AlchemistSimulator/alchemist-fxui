@@ -22,6 +22,9 @@ class Keybinder : App(ListKeybindsView::class) {
         FX.messages = ResourceBundle.getBundle("it.unibo.alchemist.l10n.KeybinderStrings")
     }
 
+    /**
+     * Companion object for launching the GUI from java classes.
+     */
     companion object {
         /**
          * Function for launching the GUI from java classes.
