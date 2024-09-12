@@ -87,7 +87,8 @@ class ListKeybindsView : View() {
         }
         paddingAll = SPACING_SMALL
     }
-    companion object {
+
+    internal companion object {
         internal const val ACTION_COLUMN_MIN_WIDTH = 200
         internal const val KEY_COLUMN_MIN_WIDTH = 150
         internal const val TABLEVIEW_MIN_WIDTH = 400.0
