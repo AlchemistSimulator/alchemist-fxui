@@ -222,7 +222,7 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
         }
     }
 
-    companion object {
+    protected companion object {
         /**
          * Position `DataFormat`.
          */
