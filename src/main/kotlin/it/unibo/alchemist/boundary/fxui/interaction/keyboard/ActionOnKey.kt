@@ -13,10 +13,18 @@ import it.unibo.alchemist.boundary.fxui.interaction.TriggerAction
 import javafx.scene.input.KeyCode
 
 /**
- * The [TriggerAction] objects regarding key strokes.
+ * The [TriggerAction] objects regarding keystrokes,
+ * which can be either [ActionOnKey.PRESSED] or [ActionOnKey.RELEASED].
  */
 enum class ActionOnKey {
+    /**
+     * The key was pressed.
+     */
     PRESSED,
+
+    /**
+     * The key was released.
+     */
     RELEASED,
     ;
 
