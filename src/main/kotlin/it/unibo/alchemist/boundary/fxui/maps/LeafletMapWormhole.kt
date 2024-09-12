@@ -98,7 +98,7 @@ class LeafletMapWormhole(
         viewPosition += delta
     }
 
-    companion object {
+    private companion object {
         /**
          * Converts [this] [GeoPosition] to [LatLong].
          */
