@@ -20,6 +20,9 @@ import java.awt.Point
  */
 class CustomLeafletMapView : LeafletMapView() {
 
+    /**
+     * Container of constants.
+     */
     companion object {
         /**
          * The maximum zoom level.
