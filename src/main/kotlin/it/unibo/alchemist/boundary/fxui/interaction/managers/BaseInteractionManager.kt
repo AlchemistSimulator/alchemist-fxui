@@ -392,7 +392,7 @@ class BaseInteractionManager<T, P : Position2D<P>>(
         }
     }
 
-    companion object {
+    private companion object {
         /**
          * The size (radius) of the highlights.
          */
