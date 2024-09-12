@@ -21,7 +21,7 @@ import java.io.File
  * Executes simulations locally with a JavaFX UI.
  */
 class SingleRunFXUI(
-    private val graphics: String? = defaultEffects,
+    private val graphics: String? = DEFAULT_EFFECTS,
 ) : DefaultLauncher() {
 
     override fun launch(loader: Loader) {
@@ -29,7 +29,7 @@ class SingleRunFXUI(
             // fetches default effects if graphics is null, otherwise loads from graphics
             val effects: EffectGroup<Nothing> = graphics?.let {
                 EffectSerializer.effectsFromFile(File(it))
-            } ?: EffectSerializer.effectsFromResources(defaultEffects)
+            } ?: EffectSerializer.effectsFromResources(DEFAULT_EFFECTS)
             // launches the JavaFX application thread
             JFXPanel()
             // runs the UI
@@ -51,6 +51,6 @@ class SingleRunFXUI(
         /**
          * Default visual effects.
          */
-        const val defaultEffects = "it/unibo/alchemist/gui/effects/json/DefaultEffects.json"
+        const val DEFAULT_EFFECTS = "it/unibo/alchemist/gui/effects/json/DefaultEffects.json"
     }
 }
