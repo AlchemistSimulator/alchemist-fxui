@@ -1,3 +1,10 @@
+## [32.34.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.33.0...32.34.0) (2024-10-21)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.1.7 ([cc17fae](https://github.com/AlchemistSimulator/alchemist-fxui/commit/cc17faeb93817b045c0895879977eff6f3df396f))
+* **deps:** update junit5 monorepo to v5.11.3 ([8a6a0a1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8a6a0a111d7e56bf9b3c23ace1256ce69072928f))
+
 ## [32.33.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.32.0...32.33.0) (2024-10-20)
 
 ### Dependency updates
