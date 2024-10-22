@@ -1,3 +1,13 @@
+## [32.35.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.34.0...32.35.0) (2024-10-22)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.1.8 ([ccfde1c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ccfde1c50525b8255580fa5c0f9641cda475a268))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.11 ([803ad78](https://github.com/AlchemistSimulator/alchemist-fxui/commit/803ad784e8b712deb0565e90ef627f427c2d1738))
+
 ## [32.34.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.33.0...32.34.0) (2024-10-21)
 
 ### Dependency updates
