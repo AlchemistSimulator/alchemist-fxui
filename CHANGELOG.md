@@ -1,3 +1,14 @@
+## [32.36.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.35.0...32.36.0) (2024-10-24)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.1.9 ([4f665f1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4f665f199a4a1ee407f6165f38c5ae101961f800))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.2 ([db4cfa0](https://github.com/AlchemistSimulator/alchemist-fxui/commit/db4cfa028180607e98986d6d43cf60780cda01c6))
+* **deps:** update danysk/action-checkout action to v0.2.22 ([8228934](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8228934ba3fc41ddd1e6fe368535fe38d395734e))
+
 ## [32.35.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.34.0...32.35.0) (2024-10-22)
 
 ### Dependency updates
