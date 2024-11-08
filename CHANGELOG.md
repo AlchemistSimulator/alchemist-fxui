@@ -1,3 +1,10 @@
+## [32.40.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.39.0...32.40.0) (2024-11-08)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v34.1.13 ([#251](https://github.com/AlchemistSimulator/alchemist-fxui/issues/251)) ([3f5d40c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/3f5d40c8f7eb7072093d4e4b51dcd89865c005f4))
+* **deps:** update plugin multijvmtesting to v1.3.0 ([#250](https://github.com/AlchemistSimulator/alchemist-fxui/issues/250)) ([eb6d35e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/eb6d35e2135b379cc9abee2bbae6d672313820de))
+
 ## [32.39.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.38.0...32.39.0) (2024-11-06)
 
 ### Dependency updates
