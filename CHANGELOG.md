@@ -1,3 +1,24 @@
+## [32.43.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.42.0...32.43.0) (2024-11-22)
+
+### Dependency updates
+
+* **api-deps:** update alchemist ([#284](https://github.com/AlchemistSimulator/alchemist-fxui/issues/284)) ([e416803](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e4168034e1bdf8de11c2b8a372962d6616b37e07))
+* **deps:** update dependency gradle to v8.11 ([#253](https://github.com/AlchemistSimulator/alchemist-fxui/issues/253)) ([c93b865](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c93b865dc20d2423d50bf1b6a54382bb3be327aa))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.115 ([#255](https://github.com/AlchemistSimulator/alchemist-fxui/issues/255)) ([045b4d9](https://github.com/AlchemistSimulator/alchemist-fxui/commit/045b4d9ac163134c58d9297e593f670b34db0e2b))
+* **deps:** update plugin com.gradle.develocity to v3.18.2 ([#257](https://github.com/AlchemistSimulator/alchemist-fxui/issues/257)) ([c717265](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c717265961be4533ec7fff8898b75e8d644cd1f0))
+* **deps:** update plugin kotlin-qa to v0.70.1 ([#262](https://github.com/AlchemistSimulator/alchemist-fxui/issues/262)) ([e9f08e6](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e9f08e68242c536c430f33451ca57effda2054a1))
+* **deps:** update plugin multijvmtesting to v1.3.1 ([#263](https://github.com/AlchemistSimulator/alchemist-fxui/issues/263)) ([ba53cc9](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ba53cc99e434b91afb6e9105fbc42b420c36c810))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.14 ([#265](https://github.com/AlchemistSimulator/alchemist-fxui/issues/265)) ([8309d60](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8309d60bbea16720b562290869a74049a1e7afa7))
+* **deps:** update plugin publishoncentral to v5.1.10 ([#264](https://github.com/AlchemistSimulator/alchemist-fxui/issues/264)) ([44c4f37](https://github.com/AlchemistSimulator/alchemist-fxui/commit/44c4f370e73a7b35b5a8ff8d8a5d3cb065e0cf46))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.13 ([#256](https://github.com/AlchemistSimulator/alchemist-fxui/issues/256)) ([4759c1f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4759c1f147ce628cc5c450fae04f74d58c29a057))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.14 ([#258](https://github.com/AlchemistSimulator/alchemist-fxui/issues/258)) ([f25d7f2](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f25d7f2318f8dfaf878f23ce5e39b2db232e9b54))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.15 ([#259](https://github.com/AlchemistSimulator/alchemist-fxui/issues/259)) ([7ed374c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/7ed374c6140c354c6cf6d72c50099424d79c0c16))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.16 ([#260](https://github.com/AlchemistSimulator/alchemist-fxui/issues/260)) ([14ae67a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/14ae67ac5b04cfc6128eba0b34f7101744e7f70e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.17 ([#261](https://github.com/AlchemistSimulator/alchemist-fxui/issues/261)) ([432783c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/432783cdccac31a6ad3acf93e1f88b75d3dd964e))
+
 ## [32.42.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.41.0...32.42.0) (2024-11-11)
 
 ### Dependency updates
