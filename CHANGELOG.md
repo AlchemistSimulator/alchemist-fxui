@@ -1,3 +1,19 @@
+## [32.45.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.44.0...32.45.0) (2024-12-05)
+
+### Dependency updates
+
+* **api-deps:** update dependency it.unibo.alchemist:alchemist-maps to v35.0.3 ([#296](https://github.com/AlchemistSimulator/alchemist-fxui/issues/296)) ([c333ca8](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c333ca8e93fceb930a6c687d2ef917ee92ea5c3c))
+* **deps:** update dependency gradle to v8.11.1 ([#286](https://github.com/AlchemistSimulator/alchemist-fxui/issues/286)) ([8f36270](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8f362703b71df26e35307af0b65a0585c373f7a5))
+* **deps:** update plugin kotlin-qa to v0.70.2 ([#288](https://github.com/AlchemistSimulator/alchemist-fxui/issues/288)) ([2808a3b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/2808a3b608642a5570090b330e9156bb96a85f61))
+* **deps:** update plugin multijvmtesting to v1.3.2 ([#287](https://github.com/AlchemistSimulator/alchemist-fxui/issues/287)) ([ce478a2](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ce478a20bdab85e2b945727d8b0c02597e34ea99))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.15 ([#289](https://github.com/AlchemistSimulator/alchemist-fxui/issues/289)) ([b7bb202](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b7bb2025f8c8193f865855d688f5a0bb6cc24ee6))
+* **deps:** update plugin publishoncentral to v5.1.11 ([#290](https://github.com/AlchemistSimulator/alchemist-fxui/issues/290)) ([cb6835e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/cb6835e872574c35b1293067d1b0e815fdac23e2))
+
+### Build and continuous integration
+
+* cancel entire workflows, never cancel workflows on master ([7361604](https://github.com/AlchemistSimulator/alchemist-fxui/commit/73616049c013c46622d903d711cc28a9e372a0b1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.23 ([#285](https://github.com/AlchemistSimulator/alchemist-fxui/issues/285)) ([9c7d254](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9c7d25409d62b2a70de515692b0eb8eb45f9cfd1))
+
 ## [32.44.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.43.0...32.44.0) (2024-11-22)
 
 ### Dependency updates
