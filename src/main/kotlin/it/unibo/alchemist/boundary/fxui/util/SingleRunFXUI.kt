@@ -23,13 +23,13 @@ import java.io.File
 class SingleRunFXUI(
     private val graphics: String? = DEFAULT_EFFECTS,
 ) : DefaultLauncher() {
-
     override fun launch(loader: Loader) {
         loader.getDefault<Any?, Nothing>().let { simulation ->
             // fetches default effects if graphics is null, otherwise loads from graphics
-            val effects: EffectGroup<Nothing> = graphics?.let {
-                EffectSerializer.effectsFromFile(File(it))
-            } ?: EffectSerializer.effectsFromResources(DEFAULT_EFFECTS)
+            val effects: EffectGroup<Nothing> =
+                graphics?.let {
+                    EffectSerializer.effectsFromFile(File(it))
+                } ?: EffectSerializer.effectsFromResources(DEFAULT_EFFECTS)
             // launches the JavaFX application thread
             JFXPanel()
             // runs the UI

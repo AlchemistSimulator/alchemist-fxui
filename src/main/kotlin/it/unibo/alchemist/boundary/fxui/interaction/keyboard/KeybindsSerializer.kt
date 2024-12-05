@@ -23,8 +23,11 @@ class KeybindsSerializer : JsonSerializer<Map<ActionFromKey, KeyCode>> {
     /**
      * {@inheritDoc}.
      */
-    override fun serialize(src: Map<ActionFromKey, KeyCode>, typeOfSrc: Type, context: JsonSerializationContext) =
-        JsonObject().apply {
-            src.forEach { addProperty(it.key.name, it.value.toString()) }
-        }
+    override fun serialize(
+        src: Map<ActionFromKey, KeyCode>,
+        typeOfSrc: Type,
+        context: JsonSerializationContext,
+    ) = JsonObject().apply {
+        src.forEach { addProperty(it.key.name, it.value.toString()) }
+    }
 }

@@ -106,9 +106,10 @@ class BaseInteractionManager<T, P : Position2D<P>>(
      * <code>invokeOnSimulation { environment.removeNode(someNode) }</code>
      */
     private val invokeOnSimulation: (Simulation<T, P>.() -> Unit) -> Unit
-        get() = environment.simulation
-            ?.let { { exec: Simulation<T, P>.() -> Unit -> it.schedule { exec.invoke(it) } } }
-            ?: error("Uninitialized environment or simulation")
+        get() =
+            environment.simulation
+                ?.let { { exec: Simulation<T, P>.() -> Unit -> it.schedule { exec.invoke(it) } } }
+                ?: error("Uninitialized environment or simulation")
 
     init {
         listOf(selector, highlighter).forEach {
@@ -116,8 +117,8 @@ class BaseInteractionManager<T, P : Position2D<P>>(
             it.heightProperty().bind(monitor.heightProperty())
             it.isMouseTransparent = true
         }
-        highlighter.graphicsContext2D.globalAlpha = Alphas.highlight
-        selector.graphicsContext2D.globalAlpha = Alphas.selection
+        highlighter.graphicsContext2D.globalAlpha = Alphas.HIGHLIGHT
+        selector.graphicsContext2D.globalAlpha = Alphas.SELECTION
         // delete
         Keybinds[ActionFromKey.DELETE].ifPresent {
             keyboard[ActionOnKey.PRESSED with it] = { deleteNodes() }
@@ -314,19 +315,23 @@ class BaseInteractionManager<T, P : Position2D<P>>(
      * @param node the node to highlight
      * @param paint the colour of the highlight
      */
-    private fun paintHighlight(node: Node<T>, paint: Paint): () -> Unit = {
-        highlighter.graphicsContext2D.let { graphics ->
-            graphics.fill = paint
-            nodes[node]?.run(wormhole::getViewPoint)?.let {
-                graphics.fillOval(
-                    it.x - HIGHLIGHT_SIZE / 2,
-                    it.y - HIGHLIGHT_SIZE / 2,
-                    HIGHLIGHT_SIZE,
-                    HIGHLIGHT_SIZE,
-                )
+    private fun paintHighlight(
+        node: Node<T>,
+        paint: Paint,
+    ): () -> Unit =
+        {
+            highlighter.graphicsContext2D.let { graphics ->
+                graphics.fill = paint
+                nodes[node]?.run(wormhole::getViewPoint)?.let {
+                    graphics.fillOval(
+                        it.x - HIGHLIGHT_SIZE / 2,
+                        it.y - HIGHLIGHT_SIZE / 2,
+                        HIGHLIGHT_SIZE,
+                        HIGHLIGHT_SIZE,
+                    )
+                }
             }
         }
-    }
 
     /**
      * Grabs all the nodes in the selection box and adds them to the selection candidates.
@@ -338,7 +343,7 @@ class BaseInteractionManager<T, P : Position2D<P>>(
                 feedback = feedback + (
                     Interaction.HIGHLIGHT_CANDIDATE to
                         selectionCandidates.map { paintHighlight(it, Colors.selecting) }
-                    )
+                )
             }
         }
     }
@@ -424,7 +429,7 @@ class BaseInteractionManager<T, P : Position2D<P>>(
     }
 
     private object Alphas {
-        const val highlight = 0.5
-        const val selection = 0.4
+        const val HIGHLIGHT = 0.5
+        const val SELECTION = 0.4
     }
 }

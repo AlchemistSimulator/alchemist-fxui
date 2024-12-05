@@ -19,7 +19,6 @@ import java.awt.Point
  * Utilities for [Rectangle].
  */
 object RectangleExtension {
-
     /**
      * Returns the nodes intersecting with the caller rectangle.
      */

@@ -16,6 +16,5 @@ import javafx.scene.input.MouseEvent
  * An event dispatcher in the context of mouse events.
  */
 abstract class MouseEventDispatcher : PersistentEventDispatcher<MouseTriggerAction, MouseEvent>() {
-
     abstract override val listener: MouseActionListener
 }

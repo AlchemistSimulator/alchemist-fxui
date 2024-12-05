@@ -19,7 +19,6 @@ import java.awt.Point
  * A [LeafletMapView] that implements functions used to manage the map without any mouse events.
  */
 class CustomLeafletMapView : LeafletMapView() {
-
     /**
      * Container of constants.
      */
@@ -52,7 +51,10 @@ class CustomLeafletMapView : LeafletMapView() {
     /**
      * Pan the map by a given amount of pixels.
      */
-    fun panBy(x: Int, y: Int) {
+    fun panBy(
+        x: Int,
+        y: Int,
+    ) {
         execScript("myMap.panBy([$x, $y], { animate: false });")
     }
 

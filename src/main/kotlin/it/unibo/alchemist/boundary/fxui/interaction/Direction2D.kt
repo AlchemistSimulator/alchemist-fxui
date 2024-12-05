@@ -19,7 +19,6 @@ import kotlin.math.min
  * @param y the Y-value. Grows positively upwards.
  */
 enum class Direction2D(val x: Int, val y: Int) {
-
     /**
      * No movement.
      */
@@ -66,7 +65,10 @@ enum class Direction2D(val x: Int, val y: Int) {
     NORTHWEST(-1, 1),
     ;
 
-    private fun flip(xFlip: Boolean = true, yFlip: Boolean = true): Direction2D =
+    private fun flip(
+        xFlip: Boolean = true,
+        yFlip: Boolean = true,
+    ): Direction2D =
         values().find {
             it.x == (if (xFlip) -x else x) && it.y == if (yFlip) -y else y
         } ?: NONE

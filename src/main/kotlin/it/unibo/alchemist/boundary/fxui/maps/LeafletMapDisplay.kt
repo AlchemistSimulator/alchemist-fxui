@@ -47,8 +47,7 @@ class LeafletMapDisplay<T> : BaseFXDisplay<T, GeoPosition>() {
         super.init(environment)
     }
 
-    override fun createWormhole(environment: Environment<T, GeoPosition>) =
-        LeafletMapWormhole(environment, this, map)
+    override fun createWormhole(environment: Environment<T, GeoPosition>) = LeafletMapWormhole(environment, this, map)
 
     override fun createZoomManager(wormhole: Wormhole2D<GeoPosition>) =
         LinearZoomManager(

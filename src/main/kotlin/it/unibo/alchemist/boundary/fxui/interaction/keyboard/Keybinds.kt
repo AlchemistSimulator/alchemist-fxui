@@ -24,16 +24,17 @@ import java.util.Optional
  * Reads and writes a configuration of key bindings to a JSON file.
  */
 object Keybinds {
-    private const val classpathPath = "it/unibo/alchemist/gui/"
-    private const val filename: String = "keybinds.json"
+    private const val CLASS_PATH = "it/unibo/alchemist/gui/"
+    private const val FILE_NAME: String = "keybinds.json"
     private val filesystemPath = "${System.getProperty("user.home")}${File.separator}.alchemist${File.separator}"
     private val logger = LoggerFactory.getLogger(Keybinds::class.java)
     private val typeToken: TypeToken<Map<ActionFromKey, KeyCode>> =
         object : TypeToken<Map<ActionFromKey, KeyCode>>() {}
-    private val gson: Gson = GsonBuilder()
-        .setPrettyPrinting()
-        .registerTypeAdapter(typeToken.type, KeybindsSerializer())
-        .create()
+    private val gson: Gson =
+        GsonBuilder()
+            .setPrettyPrinting()
+            .registerTypeAdapter(typeToken.type, KeybindsSerializer())
+            .create()
     private val DEFAULT_CHARSET = Charsets.UTF_8
 
     /**
@@ -49,7 +50,12 @@ object Keybinds {
     /**
      * Associate an action with a set of keys.
      */
-    operator fun set(action: ActionFromKey, key: KeyCode) { config = config + (action to key) }
+    operator fun set(
+        action: ActionFromKey,
+        key: KeyCode,
+    ) {
+        config = config + (action to key)
+    }
 
     /**
      * Write the binds to the file system.
@@ -57,7 +63,7 @@ object Keybinds {
      */
     @Throws(IOException::class)
     fun save() {
-        File("$filesystemPath$filename").apply {
+        File("$filesystemPath$FILE_NAME").apply {
             val parentOK = parentFile.exists() || parentFile.mkdirs()
             val fileIsAvailable = parentOK && (exists() || createNewFile())
             if (!fileIsAvailable) {
@@ -80,12 +86,14 @@ object Keybinds {
      * Attempt to load the binds from the filesystem.
      */
     private fun loadFromFile(): Boolean {
-        val tryToLoad = runCatching {
-            config = gson.fromJson(
-                File("$filesystemPath$filename").readText(),
-                typeToken.type,
-            )
-        }
+        val tryToLoad =
+            runCatching {
+                config =
+                    gson.fromJson(
+                        File("$filesystemPath$FILE_NAME").readText(),
+                        typeToken.type,
+                    )
+            }
         return tryToLoad.map { true }
             .onFailure { logger.warn("Could not load key bindings from file", it) }
             .getOrDefault(false)
@@ -95,9 +103,10 @@ object Keybinds {
      * Read the binds from classpath.
      */
     private fun loadFromClasspath() {
-        config = gson.fromJson(
-            ResourceLoader.getResource("$classpathPath$filename").readText(DEFAULT_CHARSET),
-            typeToken.type,
-        )
+        config =
+            gson.fromJson(
+                ResourceLoader.getResource("$CLASS_PATH$FILE_NAME").readText(DEFAULT_CHARSET),
+                typeToken.type,
+            )
     }
 }

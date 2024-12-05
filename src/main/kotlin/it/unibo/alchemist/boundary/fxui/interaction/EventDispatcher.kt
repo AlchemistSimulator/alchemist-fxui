@@ -17,7 +17,6 @@ import javafx.event.Event
  * @param E the type of event that triggers this dispatcher
  */
 interface EventDispatcher<in T : TriggerAction, E : Event> {
-
     /**
      * The listener bound to this dispatcher.
      */
@@ -28,5 +27,8 @@ interface EventDispatcher<in T : TriggerAction, E : Event> {
      * @param trigger the type of the job that needs to occur.
      * @param job the job that will happen whenever the given job occurs.
      */
-    operator fun set(trigger: T, job: (event: E) -> Unit)
+    operator fun set(
+        trigger: T,
+        job: (event: E) -> Unit,
+    )
 }

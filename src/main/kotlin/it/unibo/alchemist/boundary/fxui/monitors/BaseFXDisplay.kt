@@ -58,7 +58,6 @@ import java.util.stream.Stream
 open class BaseFXDisplay<T, P : Position2D<P>> :
     Pane(),
     FXOutputMonitor<T, P> {
-
     private val effectStack: ObservableList<EffectGroup<P>> = FXCollections.observableArrayList()
     private val mutex = Semaphore(1)
     private val mayRender = AtomicBoolean(true)
@@ -80,10 +79,11 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
 
     init {
         firstTime = true
-        val repaintOnResize = ChangeListener<Number> { _, _, _ ->
-            repaint()
-            interactions.repaint()
-        }
+        val repaintOnResize =
+            ChangeListener<Number> { _, _, _ ->
+                repaint()
+                interactions.repaint()
+            }
         widthProperty().addListener(repaintOnResize)
         heightProperty().addListener(repaintOnResize)
         effectsCanvas.isMouseTransparent = true
@@ -141,7 +141,12 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
         stepDone(environment, null, DoubleTime(), 0)
     }
 
-    override fun stepDone(environment: Environment<T, P>, reaction: Actionable<T>?, time: Time, step: Long) {
+    override fun stepDone(
+        environment: Environment<T, P>,
+        reaction: Actionable<T>?,
+        time: Time,
+        step: Long,
+    ) {
         update(environment, time)
     }
 
@@ -170,8 +175,7 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
      * @param environment the current environment.
      * @returns the wormhole.
      */
-    protected open fun createWormhole(environment: Environment<T, P>): WormholeFX<P> =
-        WormholeFX(environment, this)
+    protected open fun createWormhole(environment: Environment<T, P>): WormholeFX<P> = WormholeFX(environment, this)
 
     /**
      * Creates a zoom manager for this monitor.
@@ -186,7 +190,11 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
             ExponentialZoomManager.DEF_BASE,
         )
 
-    override fun finished(environment: Environment<T, P>, time: Time, step: Long) {
+    override fun finished(
+        environment: Environment<T, P>,
+        time: Time,
+        step: Long,
+    ) {
         update(environment, time)
         firstTime = true
     }
@@ -198,7 +206,10 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
      * @param time the current `Time` of simulation
      */
     @SuppressFBWarnings("RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT", "False positive")
-    private fun update(environment: Environment<T, P>, time: Time) {
+    private fun update(
+        environment: Environment<T, P>,
+        time: Time,
+    ) {
         if (Thread.holdsLock(environment)) {
             time.toDouble()
             interactions.environment = environment
@@ -208,14 +219,16 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
             interactions.nodes = environment.nodes.associateWith(environment::getPosition)
             val graphicsContext = effectsCanvas.graphicsContext2D
             val clearEffects = Stream.of { effectsCanvas.clear() }
-            val drawEffects = effects
-                .stream()
-                .map<Queue<DrawCommand<P>>> { group -> group.computeDrawCommands(environment) }
-                .flatMap { it.stream() }
-                .map { cmd -> { cmd.accept(graphicsContext, wormhole) } }
-            commandQueue = Stream
-                .concat(clearEffects, drawEffects)
-                .collect(Collectors.toCollection { ConcurrentLinkedQueue<() -> Unit>() })
+            val drawEffects =
+                effects
+                    .stream()
+                    .map<Queue<DrawCommand<P>>> { group -> group.computeDrawCommands(environment) }
+                    .flatMap { it.stream() }
+                    .map { cmd -> { cmd.accept(graphicsContext, wormhole) } }
+            commandQueue =
+                Stream
+                    .concat(clearEffects, drawEffects)
+                    .collect(Collectors.toCollection { ConcurrentLinkedQueue<() -> Unit>() })
             repaint()
         } else {
             error("Only the simulation thread can dictate GUI updates")

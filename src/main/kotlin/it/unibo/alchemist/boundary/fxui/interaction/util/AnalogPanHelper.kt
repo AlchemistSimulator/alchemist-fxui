@@ -32,7 +32,10 @@ class AnalogPanHelper(private var current: Point) {
      * @param next the destination point
      * @param view the position of the view
      */
-    fun update(next: Point, view: Point): Point {
+    fun update(
+        next: Point,
+        view: Point,
+    ): Point {
         check(valid) {
             "Unable to pan after finalizing the PanHelper"
         }

@@ -31,9 +31,9 @@ class LeafletMapWormhole(
     node: Node,
     private val map: CustomLeafletMapView,
 ) : WormholeFX<GeoPosition>(
-    environment,
-    node,
-) {
+        environment,
+        node,
+    ) {
     init {
         mode = Wormhole2D.Mode.MAP
     }
@@ -48,8 +48,10 @@ class LeafletMapWormhole(
             map.getPointFromLatLong(envPoint.toLatLong())
         }
 
-    override fun rotateAroundPoint(p: Point?, a: Double) =
-        throw UnsupportedOperationException()
+    override fun rotateAroundPoint(
+        p: Point?,
+        a: Double,
+    ) = throw UnsupportedOperationException()
 
     override fun setEnvPosition(envPoint: GeoPosition) {
         position = PointAdapter.from(getViewPoint(envPoint))
@@ -90,7 +92,10 @@ class LeafletMapWormhole(
         }
     }
 
-    override fun zoomOnPoint(point: Point, zoomRate: Double) {
+    override fun zoomOnPoint(
+        point: Point,
+        zoomRate: Double,
+    ) {
         val envPoint = getEnvPoint(point)
         zoom = zoomRate
         val newViewCenter = getViewPoint(envPoint)
@@ -107,7 +112,6 @@ class LeafletMapWormhole(
         /**
          * Converts [this] [LatLong] to [GeoPosition].
          */
-        private fun LatLong.toGeoPosition(): GeoPosition =
-            LatLongPosition(latitude, longitude)
+        private fun LatLong.toGeoPosition(): GeoPosition = LatLongPosition(latitude, longitude)
     }
 }
