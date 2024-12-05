@@ -21,7 +21,6 @@ import java.awt.Point
  * Manages multi-element selection and click-selection.
  */
 class SelectionHelper<T, P : Position2D<P>> {
-
     /**
      * Allows basic multi-element box selections.
      * @param anchorPoint the starting and unchanging [Point] of the selection
@@ -32,10 +31,11 @@ class SelectionHelper<T, P : Position2D<P>> {
          * If the rectangle's dimensions are (0, 0), the rectangle is to be considered non-existing.
          */
         val rectangle
-            get() = when {
-                closed -> Rectangle(0.0, 0.0, 0.0, 0.0)
-                else -> anchorPoint.makeRectangleWith(movingPoint)
-            }
+            get() =
+                when {
+                    closed -> Rectangle(0.0, 0.0, 0.0, 0.0)
+                    else -> anchorPoint.makeRectangleWith(movingPoint)
+                }
 
         /**
          * Returns whether the SelectionBox has been closed.
@@ -67,29 +67,32 @@ class SelectionHelper<T, P : Position2D<P>> {
      * If the rectangle's dimensions are (0, 0), the rectangle is to be considered non-existing.
      */
     val rectangle
-        get() = when {
-            box.closed -> Point(0, 0).let { it.makeRectangleWith(it) }
-            else -> box.rectangle
-        }
+        get() =
+            when {
+                box.closed -> Point(0, 0).let { it.makeRectangleWith(it) }
+                else -> box.rectangle
+            }
 
     /**
      * Begins a new selection at the given point.
      */
-    fun begin(point: Point): SelectionHelper<T, P> = apply {
-        isBoxSelectionInProgress = true
-        selectionPoint = point
-        box = SelectionBox(point)
-    }
+    fun begin(point: Point): SelectionHelper<T, P> =
+        apply {
+            isBoxSelectionInProgress = true
+            selectionPoint = point
+            box = SelectionBox(point)
+        }
 
     /**
      * Updates the selection with a new point.
      */
-    fun update(point: Point): SelectionHelper<T, P> = apply {
-        if (isBoxSelectionInProgress && !box.closed) {
-            box = SelectionBox(box.anchorPoint, point)
-            selectionPoint = null
+    fun update(point: Point): SelectionHelper<T, P> =
+        apply {
+            if (isBoxSelectionInProgress && !box.closed) {
+                box = SelectionBox(box.anchorPoint, point)
+                selectionPoint = null
+            }
         }
-    }
 
     /**
      * Closes the selection.

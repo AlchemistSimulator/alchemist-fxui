@@ -17,11 +17,13 @@ import javafx.event.Event
  * @param E the type of events that trigger the triggers
  */
 interface ActionListener<in T : TriggerAction, in E : Event> {
-
     /**
      * To be called whenever a certain action happens.
      * @param action the action that happened
      * @param event the event that triggered the action
      */
-    fun action(action: T, event: E)
+    fun action(
+        action: T,
+        event: E,
+    )
 }

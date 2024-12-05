@@ -16,8 +16,10 @@ import javafx.event.Event
  * An event dispatcher which doesn't overwrite its triggers when [set] is called on an already existing trigger.
  */
 abstract class PersistentEventDispatcher<T : TriggerAction, E : Event> : AbstractEventDispatcher<T, E>() {
-
-    override fun set(trigger: T, job: (event: E) -> Unit) {
+    override fun set(
+        trigger: T,
+        job: (event: E) -> Unit,
+    ) {
         if (trigger !in triggers) {
             super.set(trigger, job)
         }

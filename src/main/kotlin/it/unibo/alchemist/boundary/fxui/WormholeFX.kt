@@ -26,9 +26,9 @@ open class WormholeFX<P : Position2D<P>>(
     environment: Environment<*, P>,
     node: Node,
 ) : AbstractWormhole2D<P>(
-    environment,
-    NodeViewPort(node),
-    Function<NodeViewPort, PointAdapter<P>> {
-        PointAdapter.from(it.node.boundsInLocal.width / 2, it.node.boundsInLocal.height / 2)
-    },
-)
+        environment,
+        NodeViewPort(node),
+        Function<NodeViewPort, PointAdapter<P>> {
+            PointAdapter.from(it.node.boundsInLocal.width / 2, it.node.boundsInLocal.height / 2)
+        },
+    )

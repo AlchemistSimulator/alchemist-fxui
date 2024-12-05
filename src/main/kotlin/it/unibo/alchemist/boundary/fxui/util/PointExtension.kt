@@ -24,7 +24,10 @@ object PointExtension {
      * @param x the x coordinate.
      * @param y the y coordinate.
      */
-    fun makePoint(x: Number, y: Number) = Point(x.toInt(), y.toInt())
+    fun makePoint(
+        x: Number,
+        y: Number,
+    ) = Point(x.toInt(), y.toInt())
 
     /**
      * Sums [this] and the given [Point].
@@ -45,10 +48,11 @@ object PointExtension {
      *
      * @param other the other vertex.
      */
-    fun Point.makeRectangleWith(other: Point): Rectangle = Rectangle(
-        min(this.x, other.x).toDouble(),
-        min(this.y, other.y).toDouble(),
-        abs(this.x - other.x).toDouble(),
-        abs(this.y - other.y).toDouble(),
-    )
+    fun Point.makeRectangleWith(other: Point): Rectangle =
+        Rectangle(
+            min(this.x, other.x).toDouble(),
+            min(this.y, other.y).toDouble(),
+            abs(this.x - other.x).toDouble(),
+            abs(this.y - other.y).toDouble(),
+        )
 }

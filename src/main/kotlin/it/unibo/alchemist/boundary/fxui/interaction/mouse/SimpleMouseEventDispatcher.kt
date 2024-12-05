@@ -15,10 +15,13 @@ import javafx.scene.input.MouseEvent
  * A basic implementation of a mouse event dispatcher.
  */
 open class SimpleMouseEventDispatcher : MouseEventDispatcher() {
-
-    override val listener = object : MouseActionListener {
-        override fun action(action: MouseTriggerAction, event: MouseEvent) {
-            triggers[action]?.invoke(event)
+    override val listener =
+        object : MouseActionListener {
+            override fun action(
+                action: MouseTriggerAction,
+                event: MouseEvent,
+            ) {
+                triggers[action]?.invoke(event)
+            }
         }
-    }
 }

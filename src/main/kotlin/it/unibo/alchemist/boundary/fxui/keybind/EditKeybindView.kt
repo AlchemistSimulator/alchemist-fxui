@@ -43,19 +43,20 @@ class EditKeybindView : View() {
     /**
      * {@inheritDoc}.
      */
-    override val root = vbox(SPACING_SMALL) {
-        label(
-            "${messages["label_key_rebind"]} ${toEdit.actionProperty.value}. " +
-                "${messages["label_key_current"]}: ${toEdit.keyProperty.value}",
-        )
-        keyboard {
-            addEventHandler(KeyEvent.KEY_PRESSED) {
-                if (it.code != KeyCode.ESCAPE) {
-                    toEdit.item.key = it.code
+    override val root =
+        vbox(SPACING_SMALL) {
+            label(
+                "${messages["label_key_rebind"]} ${toEdit.actionProperty.value}. " +
+                    "${messages["label_key_current"]}: ${toEdit.keyProperty.value}",
+            )
+            keyboard {
+                addEventHandler(KeyEvent.KEY_PRESSED) {
+                    if (it.code != KeyCode.ESCAPE) {
+                        toEdit.item.key = it.code
+                    }
+                    close()
                 }
-                close()
             }
+            paddingAll = SPACING_SMALL
         }
-        paddingAll = SPACING_SMALL
-    }
 }

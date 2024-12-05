@@ -37,7 +37,6 @@ import java.util.ResourceBundle
  * The view that lists current keybinds.
  */
 class ListKeybindsView : View() {
-
     init {
         if (messages.baseBundleName == null) {
             messages = ResourceBundle.getBundle("it.unibo.alchemist.l10n.KeybinderStrings")
@@ -58,35 +57,36 @@ class ListKeybindsView : View() {
     /**
      * {@inheritDoc}.
      */
-    override val root = vbox(SPACING_SMALL) {
-        tableview(controller.keybinds) {
-            column(messages["column_action"], Keybind::actionProperty).minWidth(ACTION_COLUMN_MIN_WIDTH)
-            column(messages["column_key"], Keybind::keyProperty).minWidth(KEY_COLUMN_MIN_WIDTH).remainingWidth()
-            setMinSize(TABLEVIEW_MIN_WIDTH, TABLEVIEW_MIN_HEIGHT)
-            smartResize()
-            bindSelected(controller.selected)
-            vgrow = Priority.ALWAYS
-            onDoubleClick {
-                Scope().let {
-                    setInScope(controller.selected, it)
-                    tornadofx.find(EditKeybindView::class, it).openModal()
+    override val root =
+        vbox(SPACING_SMALL) {
+            tableview(controller.keybinds) {
+                column(messages["column_action"], Keybind::actionProperty).minWidth(ACTION_COLUMN_MIN_WIDTH)
+                column(messages["column_key"], Keybind::keyProperty).minWidth(KEY_COLUMN_MIN_WIDTH).remainingWidth()
+                setMinSize(TABLEVIEW_MIN_WIDTH, TABLEVIEW_MIN_HEIGHT)
+                smartResize()
+                bindSelected(controller.selected)
+                vgrow = Priority.ALWAYS
+                onDoubleClick {
+                    Scope().let {
+                        setInScope(controller.selected, it)
+                        tornadofx.find(EditKeybindView::class, it).openModal()
+                    }
                 }
             }
-        }
-        hbox(SPACING_SMALL) {
-            region {
-                hgrow = Priority.ALWAYS
-            }
-            button(messages["button_close"]) {
-                action {
-                    Keybinds.config = controller.keybinds.associate { it.action to it.key }
-                    Keybinds.save()
-                    close()
+            hbox(SPACING_SMALL) {
+                region {
+                    hgrow = Priority.ALWAYS
+                }
+                button(messages["button_close"]) {
+                    action {
+                        Keybinds.config = controller.keybinds.associate { it.action to it.key }
+                        Keybinds.save()
+                        close()
+                    }
                 }
             }
+            paddingAll = SPACING_SMALL
         }
-        paddingAll = SPACING_SMALL
-    }
 
     internal companion object {
         internal const val ACTION_COLUMN_MIN_WIDTH = 200

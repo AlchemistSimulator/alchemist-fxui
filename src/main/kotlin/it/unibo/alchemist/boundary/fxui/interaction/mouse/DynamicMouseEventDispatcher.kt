@@ -18,25 +18,32 @@ import javafx.scene.input.MouseEvent
 open class DynamicMouseEventDispatcher : SimpleMouseEventDispatcher() {
     private var dynamicActions: Map<MouseTriggerAction, (MouseEvent) -> Unit> = emptyMap()
 
-    override val listener = object : MouseActionListener {
-        override fun action(action: MouseTriggerAction, event: MouseEvent) {
-            if (action in dynamicActions.keys) {
-                dynamicActions[action]?.apply {
-                    invoke(event)
-                    dynamicActions = dynamicActions - action
+    override val listener =
+        object : MouseActionListener {
+            override fun action(
+                action: MouseTriggerAction,
+                event: MouseEvent,
+            ) {
+                if (action in dynamicActions.keys) {
+                    dynamicActions[action]?.apply {
+                        invoke(event)
+                        dynamicActions = dynamicActions - action
+                    }
+                } else {
+                    triggers[action]?.invoke(event)
                 }
-            } else {
-                triggers[action]?.invoke(event)
             }
         }
-    }
 
     /**
      * Set a dynamic action.
      * @param trigger the trigger for the action
      * @param job the job that will be run when the action occurs
      */
-    fun setDynamicAction(trigger: MouseTriggerAction, job: (MouseEvent) -> Unit) {
+    fun setDynamicAction(
+        trigger: MouseTriggerAction,
+        job: (MouseEvent) -> Unit,
+    ) {
         dynamicActions = dynamicActions + (trigger to job)
     }
 }

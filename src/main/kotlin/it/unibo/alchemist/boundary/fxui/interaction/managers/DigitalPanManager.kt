@@ -66,10 +66,11 @@ class DigitalPanManager<P : Position2D<P>>(
                 // the X-axis seems to be flipped... (grows positively towards the "left")
                 // so we flip the X-values of the directions
                 direction.flippedX.let {
-                    timer = fixedRateTimer(period = period) {
-                        wormhole.viewPosition += it * speed
-                        updates()
-                    }
+                    timer =
+                        fixedRateTimer(period = period) {
+                            wormhole.viewPosition += it * speed
+                            updates()
+                        }
                 }
             }
         }

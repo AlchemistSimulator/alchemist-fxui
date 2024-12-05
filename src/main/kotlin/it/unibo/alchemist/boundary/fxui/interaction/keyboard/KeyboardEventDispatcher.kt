@@ -17,7 +17,6 @@ import javafx.scene.input.KeyEvent
  * An event dispatcher in the context of a keyboard.
  */
 abstract class KeyboardEventDispatcher : PersistentEventDispatcher<KeyboardTriggerAction, KeyEvent>() {
-
     abstract override val listener: KeyboardActionListener
 
     /**

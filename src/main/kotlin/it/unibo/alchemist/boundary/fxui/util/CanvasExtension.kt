@@ -25,8 +25,12 @@ object CanvasExtension {
     /**
      * Returns a command for drawing the given rectangle on the caller canvas.
      */
-    fun Canvas.createDrawRectangleCommand(rectangle: Rectangle, colour: Paint): () -> Unit = {
-        graphicsContext2D.fill = colour
-        graphicsContext2D.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height)
-    }
+    fun Canvas.createDrawRectangleCommand(
+        rectangle: Rectangle,
+        colour: Paint,
+    ): () -> Unit =
+        {
+            graphicsContext2D.fill = colour
+            graphicsContext2D.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height)
+        }
 }

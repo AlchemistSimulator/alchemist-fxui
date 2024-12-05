@@ -16,19 +16,23 @@ import javafx.scene.input.KeyEvent
  * A basic implementation of [KeyboardEventDispatcher].
  */
 open class SimpleKeyboardEventDispatcher : KeyboardEventDispatcher() {
-
     private var keysHeld: Set<KeyCode> = emptySet()
 
-    override val listener = object : KeyboardActionListener {
-        override fun action(action: KeyboardTriggerAction, event: KeyEvent) {
-            triggers[action]?.invoke(event)
-            keysHeld = when (action.type) {
-                ActionOnKey.PRESSED -> keysHeld + action.key
-                ActionOnKey.RELEASED -> keysHeld - action.key
+    override val listener =
+        object : KeyboardActionListener {
+            override fun action(
+                action: KeyboardTriggerAction,
+                event: KeyEvent,
+            ) {
+                triggers[action]?.invoke(event)
+                keysHeld =
+                    when (action.type) {
+                        ActionOnKey.PRESSED -> keysHeld + action.key
+                        ActionOnKey.RELEASED -> keysHeld - action.key
+                    }
+                event.consume()
             }
-            event.consume()
         }
-    }
 
     override fun isHeld(key: KeyCode) = key in keysHeld
 }

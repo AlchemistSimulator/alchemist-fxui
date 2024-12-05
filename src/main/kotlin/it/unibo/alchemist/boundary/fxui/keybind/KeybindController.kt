@@ -23,12 +23,13 @@ class KeybindController : Controller() {
     /**
      * The current keybinds.
      */
-    val keybinds: ObservableList<Keybind> = FXCollections.observableList(
-        Keybinds.config.asSequence()
-            .map { Keybind(it.key, it.value) }
-            .plus(ActionFromKey.values().map { Keybind(it, KeyCode.UNDEFINED) })
-            .distinctBy { it.action }.toList(),
-    )
+    val keybinds: ObservableList<Keybind> =
+        FXCollections.observableList(
+            Keybinds.config.asSequence()
+                .map { Keybind(it.key, it.value) }
+                .plus(ActionFromKey.values().map { Keybind(it, KeyCode.UNDEFINED) })
+                .distinctBy { it.action }.toList(),
+        )
 
     /**
      * The keybind currently selected in the view.

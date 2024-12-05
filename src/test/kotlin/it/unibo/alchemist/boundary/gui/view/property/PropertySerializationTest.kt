@@ -80,7 +80,10 @@ class PropertySerializationTester<T : Property<E>, E : Any>(
         }
     }
 
-    private fun <T> message(origin: Property<T>?, deserialized: Property<T>?): String {
+    private fun <T> message(
+        origin: Property<T>?,
+        deserialized: Property<T>?,
+    ): String {
         if (origin == null) {
             return "original property is null"
         }
@@ -98,7 +101,6 @@ class PropertySerializationTester<T : Property<E>, E : Any>(
  * See [PropertySerializationTester].
  */
 abstract class PropertySerializationTest {
-
     protected abstract val tester: PropertySerializationTester<*, *>
 
     /**
@@ -122,7 +124,6 @@ abstract class PropertySerializationTest {
  * The [PropertySerializationTest] for [RangedDoubleProperty].
  */
 class RangedDoublePropertySerializationTest : PropertySerializationTest() {
-
     companion object {
         private const val DOUBLE_PROPERTY = "Test double property name"
         private const val DOUBLE_INITIAL_VALUE = 5.0
@@ -134,13 +135,14 @@ class RangedDoublePropertySerializationTest : PropertySerializationTest() {
         private const val DOUBLE_COLOR_INITIAL_VALUE = 0.5
     }
 
-    override val tester = PropertySerializationTester(
-        object : TypeToken<RangedDoubleProperty>() {}.type,
-        { this as RangedDoubleProperty },
-        RangedDoubleProperty(DOUBLE_PROPERTY, DOUBLE_INITIAL_VALUE, DOUBLE_LOWER_BOUND, DOUBLE_UPPER_BOUND),
-        PropertyFactory.getFXColorChannelProperty(DOUBLE_COLOR_NAME, DOUBLE_COLOR_INITIAL_VALUE),
-        PropertyFactory.getPercentageRangedProperty(DOUBLE_PERCENT_NAME, DOUBLE_PERCENT_INITIAL_VALUE),
-    )
+    override val tester =
+        PropertySerializationTester(
+            object : TypeToken<RangedDoubleProperty>() {}.type,
+            { this as RangedDoubleProperty },
+            RangedDoubleProperty(DOUBLE_PROPERTY, DOUBLE_INITIAL_VALUE, DOUBLE_LOWER_BOUND, DOUBLE_UPPER_BOUND),
+            PropertyFactory.getFXColorChannelProperty(DOUBLE_COLOR_NAME, DOUBLE_COLOR_INITIAL_VALUE),
+            PropertyFactory.getPercentageRangedProperty(DOUBLE_PERCENT_NAME, DOUBLE_PERCENT_INITIAL_VALUE),
+        )
 }
 
 /**
@@ -154,16 +156,17 @@ class RangedIntegerPropertySerializationTest : PropertySerializationTest() {
         private const val INTEGER_UPPER_BOUND = 100
     }
 
-    override val tester = PropertySerializationTester(
-        object : TypeToken<RangedIntegerProperty>() {}.type,
-        { this as RangedIntegerProperty },
-        RangedIntegerProperty(
-            INTEGER_PROPERTY,
-            INTEGER_INITIAL_VALUE,
-            INTEGER_LOWER_BOUND,
-            INTEGER_UPPER_BOUND,
-        ),
-    )
+    override val tester =
+        PropertySerializationTester(
+            object : TypeToken<RangedIntegerProperty>() {}.type,
+            { this as RangedIntegerProperty },
+            RangedIntegerProperty(
+                INTEGER_PROPERTY,
+                INTEGER_INITIAL_VALUE,
+                INTEGER_LOWER_BOUND,
+                INTEGER_UPPER_BOUND,
+            ),
+        )
 }
 
 /**
@@ -174,18 +177,19 @@ class SerializableBooleanPropertySerializationTest : PropertySerializationTest()
         private const val BOOLEAN_PROPERTY = "Test boolean property name"
     }
 
-    override val tester = PropertySerializationTester(
-        object : TypeToken<SerializableBooleanProperty>() {}.type,
-        { this as SerializableBooleanProperty },
-        SerializableBooleanProperty(
-            BOOLEAN_PROPERTY,
-            true,
-        ),
-        SerializableBooleanProperty(
-            BOOLEAN_PROPERTY,
-            false,
-        ),
-    )
+    override val tester =
+        PropertySerializationTester(
+            object : TypeToken<SerializableBooleanProperty>() {}.type,
+            { this as SerializableBooleanProperty },
+            SerializableBooleanProperty(
+                BOOLEAN_PROPERTY,
+                true,
+            ),
+            SerializableBooleanProperty(
+                BOOLEAN_PROPERTY,
+                false,
+            ),
+        )
 }
 
 /**
@@ -198,18 +202,21 @@ class SerializableEnumPropertySerializationTest : PropertySerializationTest() {
 
     @Suppress("unused")
     enum class TestEnum {
-        FOO, BAR, TEST
+        FOO,
+        BAR,
+        TEST,
     }
 
     @Suppress("unchecked_cast")
-    override val tester = PropertySerializationTester(
-        object : TypeToken<SerializableEnumProperty<TestEnum>>() {}.type,
-        { this as SerializableEnumProperty<TestEnum> },
-        SerializableEnumProperty(
-            ENUM_PROPERTY,
-            TestEnum.TEST,
-        ),
-    )
+    override val tester =
+        PropertySerializationTester(
+            object : TypeToken<SerializableEnumProperty<TestEnum>>() {}.type,
+            { this as SerializableEnumProperty<TestEnum> },
+            SerializableEnumProperty(
+                ENUM_PROPERTY,
+                TestEnum.TEST,
+            ),
+        )
 }
 
 /**
@@ -221,12 +228,13 @@ class SerializableStringPropertySerializationTest : PropertySerializationTest() 
         private const val STRING_INITIAL_VALUE = "Test string property value"
     }
 
-    override val tester = PropertySerializationTester(
-        object : TypeToken<SerializableStringProperty>() {}.type,
-        { this as SerializableStringProperty },
-        SerializableStringProperty(
-            STRING_PROPERTY,
-            STRING_INITIAL_VALUE,
-        ),
-    )
+    override val tester =
+        PropertySerializationTester(
+            object : TypeToken<SerializableStringProperty>() {}.type,
+            { this as SerializableStringProperty },
+            SerializableStringProperty(
+                STRING_PROPERTY,
+                STRING_INITIAL_VALUE,
+            ),
+        )
 }
