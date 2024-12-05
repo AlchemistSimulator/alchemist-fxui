@@ -1,3 +1,12 @@
+## [32.46.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.45.1...32.46.0) (2024-12-05)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v36 ([#298](https://github.com/AlchemistSimulator/alchemist-fxui/issues/298)) ([e71550a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e71550a06c9bb0cbaa9488991395fe948b494401))
+* **deps:** update node.js to 22.12 ([#305](https://github.com/AlchemistSimulator/alchemist-fxui/issues/305)) ([65bff56](https://github.com/AlchemistSimulator/alchemist-fxui/commit/65bff56ca7bbd09f277c6aab81f81aef053287c9))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.9.0 ([#303](https://github.com/AlchemistSimulator/alchemist-fxui/issues/303)) ([494e6e1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/494e6e149a36fbaead00c976037b47040b2ed6e2))
+* **deps:** update plugin publishoncentral to v6 ([#304](https://github.com/AlchemistSimulator/alchemist-fxui/issues/304)) ([416830c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/416830c4b3c19d37f18c365ee65d016bea6ae9b0))
+
 ## [32.45.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.45.0...32.45.1) (2024-12-05)
 
 ### Dependency updates
