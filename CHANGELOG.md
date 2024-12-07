@@ -1,3 +1,18 @@
+## [32.47.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.46.0...32.47.0) (2024-12-07)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v36.0.4 ([#330](https://github.com/AlchemistSimulator/alchemist-fxui/issues/330)) ([456a428](https://github.com/AlchemistSimulator/alchemist-fxui/commit/456a4282b7ca840f2c53d90e5e6310411dc2c04d))
+* **deps:** update plugin kotlin-qa to v0.75.0 ([#301](https://github.com/AlchemistSimulator/alchemist-fxui/issues/301)) ([0108e78](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0108e78270223e477ee8a6e8f5c67a16dd8e35c6))
+* **deps:** update plugin multijvmtesting to v2 ([#323](https://github.com/AlchemistSimulator/alchemist-fxui/issues/323)) ([23e6bcc](https://github.com/AlchemistSimulator/alchemist-fxui/commit/23e6bcc975a9b25c041e0eead76077ddc806e859))
+* **deps:** update plugin multijvmtesting to v2.0.1 ([#328](https://github.com/AlchemistSimulator/alchemist-fxui/issues/328)) ([6b4d57f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6b4d57fbb40079ff463c30f64a873c535cf80014))
+* **deps:** update plugin multijvmtesting to v3 ([#329](https://github.com/AlchemistSimulator/alchemist-fxui/issues/329)) ([79cbf05](https://github.com/AlchemistSimulator/alchemist-fxui/commit/79cbf05b9284133e25170c718d6828b561adae7e))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.24 ([#324](https://github.com/AlchemistSimulator/alchemist-fxui/issues/324)) ([f5fd06a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f5fd06aefe1e6037a1f38b47e56a43dc23162dcd))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.25 ([#327](https://github.com/AlchemistSimulator/alchemist-fxui/issues/327)) ([5e21e76](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5e21e768bba9eafe862569c30bbde274bce75151))
+
 ## [32.46.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.45.1...32.46.0) (2024-12-05)
 
 ### Dependency updates
