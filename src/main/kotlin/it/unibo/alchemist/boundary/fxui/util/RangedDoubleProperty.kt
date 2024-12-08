@@ -42,7 +42,8 @@ class RangedDoubleProperty
         initialValue: Double = 0.0,
         lowerBound: Double = -Double.MAX_VALUE,
         upperBound: Double = Double.MAX_VALUE,
-    ) : DoublePropertyBase(initialValue), Serializable {
+    ) : DoublePropertyBase(initialValue),
+        Serializable {
         /**
          * The lower bound value of the property.
          */

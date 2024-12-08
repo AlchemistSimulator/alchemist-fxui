@@ -17,7 +17,10 @@ import tornadofx.property
 /**
  * A class that describes the relation between a KeyCode and an Action.
  */
-class Keybind(action: ActionFromKey, key: KeyCode) {
+class Keybind(
+    action: ActionFromKey,
+    key: KeyCode,
+) {
     /**
      * The action.
      */

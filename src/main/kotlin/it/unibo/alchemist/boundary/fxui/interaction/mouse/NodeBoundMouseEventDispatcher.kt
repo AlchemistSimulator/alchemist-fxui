@@ -14,7 +14,9 @@ import javafx.scene.Node
 /**
  * A mouse event dispatcher that catches mouse input from a node.
  */
-open class NodeBoundMouseEventDispatcher(node: Node) : DynamicMouseEventDispatcher() {
+open class NodeBoundMouseEventDispatcher(
+    node: Node,
+) : DynamicMouseEventDispatcher() {
     init {
         node.setOnMouseClicked {
             listener.action(MouseButtonTriggerAction(ActionOnMouse.CLICKED, it.button), it)

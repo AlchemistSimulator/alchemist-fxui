@@ -22,7 +22,8 @@ object TemporaryFile {
     fun create(): File =
         File.createTempFile(
             StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE).walk { stack ->
-                stack.skip(1)
+                stack
+                    .skip(1)
                     .map(StackWalker.StackFrame::getMethodName)
                     .findFirst()
                     .orElse("unknownMethod")

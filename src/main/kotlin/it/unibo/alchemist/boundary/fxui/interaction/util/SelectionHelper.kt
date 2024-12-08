@@ -25,7 +25,10 @@ class SelectionHelper<T, P : Position2D<P>> {
      * Allows basic multi-element box selections.
      * @param anchorPoint the starting and unchanging [Point] of the selection
      */
-    class SelectionBox(val anchorPoint: Point = Point(0, 0), private val movingPoint: Point = anchorPoint) {
+    class SelectionBox(
+        val anchorPoint: Point = Point(0, 0),
+        private val movingPoint: Point = anchorPoint,
+    ) {
         /**
          * The rectangle representing the box.
          * If the rectangle's dimensions are (0, 0), the rectangle is to be considered non-existing.
@@ -111,7 +114,8 @@ class SelectionHelper<T, P : Position2D<P>> {
         wormhole: Wormhole2D<P>,
     ): Pair<Node<T>, P>? =
         selectionPoint?.let { point ->
-            nodes.minByOrNull { nodes[it.key]?.distanceTo(wormhole.getEnvPoint(point)) ?: Double.POSITIVE_INFINITY }
+            nodes
+                .minByOrNull { nodes[it.key]?.distanceTo(wormhole.getEnvPoint(point)) ?: Double.POSITIVE_INFINITY }
                 ?.toPair()
         }
 

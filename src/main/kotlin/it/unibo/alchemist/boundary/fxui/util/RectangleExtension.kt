@@ -31,6 +31,8 @@ object RectangleExtension {
      * Returns whether the [Rectangle] [this] contains [point].
      */
     operator fun Rectangle.contains(point: Point): Boolean =
-        x <= point.x.toDouble() && point.x.toDouble() <= x + width &&
-            y <= point.y.toDouble() && point.y.toDouble() <= y + height
+        x <= point.x.toDouble() &&
+            point.x.toDouble() <= x + width &&
+            y <= point.y.toDouble() &&
+            point.y.toDouble() <= y + height
 }

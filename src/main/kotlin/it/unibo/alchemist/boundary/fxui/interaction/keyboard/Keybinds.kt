@@ -94,7 +94,8 @@ object Keybinds {
                         typeToken.type,
                     )
             }
-        return tryToLoad.map { true }
+        return tryToLoad
+            .map { true }
             .onFailure { logger.warn("Could not load key bindings from file", it) }
             .getOrDefault(false)
     }

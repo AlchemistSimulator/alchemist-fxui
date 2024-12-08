@@ -34,10 +34,11 @@ class SingleRunFXUI(
             JFXPanel()
             // runs the UI
             JavaFXThreadUtil.runOnFXThread {
-                SingleRunApp<Any, Nothing>().apply {
-                    setEffectGroups(listOf(effects))
-                    setSimulation(simulation)
-                }.start(Stage())
+                SingleRunApp<Any, Nothing>()
+                    .apply {
+                        setEffectGroups(listOf(effects))
+                        setSimulation(simulation)
+                    }.start(Stage())
             }
             // runs the simulation
             simulation.run()

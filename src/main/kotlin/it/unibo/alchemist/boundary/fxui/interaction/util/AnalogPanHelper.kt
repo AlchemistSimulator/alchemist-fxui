@@ -19,7 +19,9 @@ import java.awt.Point
  * panning can go towards any direction.
  * @param current the current position of the mouse.
  */
-class AnalogPanHelper(private var current: Point) {
+class AnalogPanHelper(
+    private var current: Point,
+) {
     /**
      * Returns whether this [AnalogPanHelper] is still valid.
      * Invalidation happens when [close] is called, for example when the mouse goes out of bounds.

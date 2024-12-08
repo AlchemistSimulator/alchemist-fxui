@@ -18,4 +18,7 @@ import javafx.scene.input.KeyCode
  * @param [type] the action performed with the key.
  * @param [key] the on which the action is performed.
  */
-data class KeyboardTriggerAction(val type: ActionOnKey, val key: KeyCode) : TriggerAction
+data class KeyboardTriggerAction(
+    val type: ActionOnKey,
+    val key: KeyCode,
+) : TriggerAction

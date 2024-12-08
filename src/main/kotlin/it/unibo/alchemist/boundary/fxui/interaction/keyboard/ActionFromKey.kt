@@ -12,7 +12,9 @@ package it.unibo.alchemist.boundary.fxui.interaction.keyboard
 /**
  * Actions which can be bound to a key on the keyboard.
  */
-enum class ActionFromKey(private val description: String) {
+enum class ActionFromKey(
+    private val description: String,
+) {
     /**
      * Control modifier.
      */

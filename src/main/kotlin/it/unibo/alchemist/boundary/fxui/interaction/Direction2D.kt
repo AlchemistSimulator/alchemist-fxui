@@ -18,7 +18,10 @@ import kotlin.math.min
  * @param x the X-value. Grows positively towards the "right".
  * @param y the Y-value. Grows positively upwards.
  */
-enum class Direction2D(val x: Int, val y: Int) {
+enum class Direction2D(
+    val x: Int,
+    val y: Int,
+) {
     /**
      * No movement.
      */
@@ -69,7 +72,7 @@ enum class Direction2D(val x: Int, val y: Int) {
         xFlip: Boolean = true,
         yFlip: Boolean = true,
     ): Direction2D =
-        values().find {
+        entries.find {
             it.x == (if (xFlip) -x else x) && it.y == if (yFlip) -y else y
         } ?: NONE
 
@@ -97,7 +100,7 @@ enum class Direction2D(val x: Int, val y: Int) {
      * Sums with a direction.
      */
     operator fun plus(other: Direction2D): Direction2D =
-        values().find {
+        entries.find {
             it.x == (x + other.x).limited() && it.y == (y + other.y).limited()
         } ?: NONE
 
@@ -105,7 +108,7 @@ enum class Direction2D(val x: Int, val y: Int) {
      * Subtracts with a direction.
      */
     operator fun minus(other: Direction2D): Direction2D =
-        values().find {
+        entries.find {
             it.x == (x - other.x).limited() && it.y == (y - other.y).limited()
         } ?: NONE
 
@@ -120,7 +123,5 @@ enum class Direction2D(val x: Int, val y: Int) {
      * For example, [NORTHEAST] contains [NORTH] and [EAST], but not [WEST].
      * All directions contain [NONE]. [NONE] contains only [NONE].
      */
-    operator fun contains(other: Direction2D): Boolean {
-        return this + other == this
-    }
+    operator fun contains(other: Direction2D): Boolean = this + other == this
 }

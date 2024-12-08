@@ -17,4 +17,7 @@ import javafx.scene.input.MouseButton
  * @param type the type of the action performed with the mouse
  * @param button the button related to the action performed
  */
-data class MouseButtonTriggerAction(val type: ActionOnMouse, val button: MouseButton) : MouseTriggerAction
+data class MouseButtonTriggerAction(
+    val type: ActionOnMouse,
+    val button: MouseButton,
+) : MouseTriggerAction

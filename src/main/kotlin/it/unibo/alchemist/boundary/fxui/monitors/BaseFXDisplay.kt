@@ -92,9 +92,7 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
         children.addAll(background, effectsCanvas, interactions.canvases)
     }
 
-    override fun getViewStatus(): FXOutputMonitor.ViewStatus {
-        return this.viewStatus
-    }
+    override fun getViewStatus(): FXOutputMonitor.ViewStatus = this.viewStatus
 
     override fun setViewStatus(viewStatus: FXOutputMonitor.ViewStatus) {
         this.viewStatus = viewStatus
@@ -125,9 +123,7 @@ open class BaseFXDisplay<T, P : Position2D<P>> :
         this.effectStack.add(effects)
     }
 
-    override fun getEffects(): Collection<EffectGroup<P>> {
-        return this.effectStack
-    }
+    override fun getEffects(): Collection<EffectGroup<P>> = this.effectStack
 
     override fun setEffects(effects: Collection<EffectGroup<P>>) {
         this.effectStack.clear()
