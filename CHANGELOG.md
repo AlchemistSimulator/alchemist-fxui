@@ -1,3 +1,19 @@
+## [32.49.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.48.0...32.49.0) (2024-12-09)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v36.0.6 ([#337](https://github.com/AlchemistSimulator/alchemist-fxui/issues/337)) ([9cfee0b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9cfee0b388449030e15e9c19da2171c93cbb6624))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.116 ([#333](https://github.com/AlchemistSimulator/alchemist-fxui/issues/333)) ([11cdf0b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/11cdf0bfc91974b945432a25a166867a18093681))
+* **deps:** update plugin kotlin-qa to v0.77.1 ([db96b05](https://github.com/AlchemistSimulator/alchemist-fxui/commit/db96b054563f4c848d364ccbcd25009f4f160368))
+* **deps:** update plugin kotlin-qa to v0.78.0 ([#335](https://github.com/AlchemistSimulator/alchemist-fxui/issues/335)) ([12af15f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/12af15f15332bef0d0d4e58dd8d5a0f51b76fce3))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.16 ([#336](https://github.com/AlchemistSimulator/alchemist-fxui/issues/336)) ([9443da4](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9443da41f294d9a81fb8457d693608f9322465b2))
+* **deps:** update plugin publishoncentral to v6.0.1 ([#332](https://github.com/AlchemistSimulator/alchemist-fxui/issues/332)) ([cdb63d5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/cdb63d5cdd24ffdcb9d5bd19a0b32d991b88681e))
+* **deps:** update plugin publishoncentral to v7 ([#334](https://github.com/AlchemistSimulator/alchemist-fxui/issues/334)) ([4002b1f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4002b1f37fd9d8cbc9a4cc78fcc3296f1ca5e445))
+
+### General maintenance
+
+* ignore .kotlin/ ([526aceb](https://github.com/AlchemistSimulator/alchemist-fxui/commit/526acebfe225a51f875dda78c6791fd748e4f43f))
+
 ## [32.48.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.47.0...32.48.0) (2024-12-07)
 
 ### Dependency updates
