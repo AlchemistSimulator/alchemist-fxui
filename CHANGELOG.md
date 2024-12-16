@@ -1,3 +1,16 @@
+## [32.49.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.49.0...32.49.1) (2024-12-16)
+
+### Dependency updates
+
+* **deps:** update junit5 monorepo to v5.11.4 ([#340](https://github.com/AlchemistSimulator/alchemist-fxui/issues/340)) ([7420bfc](https://github.com/AlchemistSimulator/alchemist-fxui/commit/7420bfc8ad9d1c9df1f5f619d8bac3e8e4e682b7))
+* **deps:** update plugin com.gradle.develocity to v3.19 ([#338](https://github.com/AlchemistSimulator/alchemist-fxui/issues/338)) ([764be88](https://github.com/AlchemistSimulator/alchemist-fxui/commit/764be88a0706dd9b0a0ae3c80ba1ae995da3ec4f))
+* **deps:** update plugin multijvmtesting to v3.0.1 ([#341](https://github.com/AlchemistSimulator/alchemist-fxui/issues/341)) ([29a5068](https://github.com/AlchemistSimulator/alchemist-fxui/commit/29a5068a6d62e22d2cb9ed952a384fe2293b9aea))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.17 ([#342](https://github.com/AlchemistSimulator/alchemist-fxui/issues/342)) ([00a4067](https://github.com/AlchemistSimulator/alchemist-fxui/commit/00a406747117a6e4b9e9118f34447d9ebc144333))
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2 ([#343](https://github.com/AlchemistSimulator/alchemist-fxui/issues/343)) ([4f353cd](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4f353cd5f73cb649c8b1eedcdea4c0db62e3f110))
+
 ## [32.49.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.48.0...32.49.0) (2024-12-09)
 
 ### Dependency updates
