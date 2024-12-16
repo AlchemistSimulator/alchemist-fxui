@@ -1,3 +1,10 @@
+## [32.50.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.49.1...32.50.0) (2024-12-16)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v36.0.7 ([#344](https://github.com/AlchemistSimulator/alchemist-fxui/issues/344)) ([693c309](https://github.com/AlchemistSimulator/alchemist-fxui/commit/693c30978703643463a82200dd524f73f1e36b27))
+* **deps:** update plugin publishoncentral to v7.0.1 ([#345](https://github.com/AlchemistSimulator/alchemist-fxui/issues/345)) ([e9acbe3](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e9acbe381607f2399d44240c24541471c1eb78b0))
+
 ## [32.49.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.49.0...32.49.1) (2024-12-16)
 
 ### Dependency updates
