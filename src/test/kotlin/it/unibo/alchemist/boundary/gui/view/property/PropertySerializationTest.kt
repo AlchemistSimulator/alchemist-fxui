@@ -9,7 +9,6 @@
 
 package it.unibo.alchemist.boundary.gui.view.property
 
-import com.google.common.base.Charsets
 import com.google.gson.reflect.TypeToken
 import it.unibo.alchemist.boundary.fxui.effects.serialization.EffectSerializer
 import it.unibo.alchemist.boundary.fxui.properties.PropertyFactory
