@@ -86,6 +86,11 @@ tasks.test {
     }
 }
 
+// TODO: enable PMD when this bug is fixed: https://github.com/pmd/pmd/issues/5096
+tasks.withType<Pmd>().configureEach {
+    enabled = false
+}
+
 signing {
     val signingKey: String? by project
     val signingPassword: String? by project
