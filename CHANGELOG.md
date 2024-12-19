@@ -1,3 +1,20 @@
+## [32.53.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.52.0...32.53.0) (2024-12-19)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v36.0.10 ([#352](https://github.com/AlchemistSimulator/alchemist-fxui/issues/352)) ([ce96c3e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ce96c3e169527396cda8893734a1d03260d0e7d5))
+* **api-deps:** update alchemist to v36.0.11 ([#355](https://github.com/AlchemistSimulator/alchemist-fxui/issues/355)) ([af102a2](https://github.com/AlchemistSimulator/alchemist-fxui/commit/af102a22b72c445eb07a9e51e4f080080f0a0954))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.26 ([#349](https://github.com/AlchemistSimulator/alchemist-fxui/issues/349)) ([954428e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/954428e393707b39f3fd4647a1c653e4f29c9e33))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.27 ([#350](https://github.com/AlchemistSimulator/alchemist-fxui/issues/350)) ([50e5a1c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/50e5a1c8a918b492ff1936955dee8769fc0a4c68))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.28 ([#351](https://github.com/AlchemistSimulator/alchemist-fxui/issues/351)) ([09461a3](https://github.com/AlchemistSimulator/alchemist-fxui/commit/09461a35756f7e0ca62c12aed7508f128d98cd93))
+
+### General maintenance
+
+* remove usage of Guava's `Charset` ([#354](https://github.com/AlchemistSimulator/alchemist-fxui/issues/354)) ([bc505d7](https://github.com/AlchemistSimulator/alchemist-fxui/commit/bc505d79f5cd7f813f6ffe24cb29b3fda61ff023))
+
 ## [32.52.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.51.0...32.52.0) (2024-12-17)
 
 ### Dependency updates
