@@ -26,7 +26,7 @@ jiconfont-materialDesignIcons = "com.github.jiconfont:jiconfont-google_material_
 leafletmap = "org.danilopianini:de.saring.leafletmap:1.0.5"
 resourceloader = "org.danilopianini:thread-inheritable-resource-loader:0.3.7"
 slf4j = "org.slf4j:slf4j-api:2.0.16"
-spotbugs-annotations = "com.github.spotbugs:spotbugs-annotations:4.8.6"
+spotbugs-annotations = "com.github.spotbugs:spotbugs-annotations:4.9.0"
 tornadofx = "no.tornado:tornadofx:2.0.0-SNAPSHOT"
 
 [bundles]
