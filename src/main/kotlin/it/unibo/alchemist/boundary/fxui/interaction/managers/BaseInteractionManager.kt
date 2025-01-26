@@ -107,9 +107,7 @@ class BaseInteractionManager<T, P : Position2D<P>>(
      */
     private val invokeOnSimulation: (Simulation<T, P>.() -> Unit) -> Unit
         get() =
-            environment.simulation
-                ?.let { { exec: Simulation<T, P>.() -> Unit -> it.schedule { exec.invoke(it) } } }
-                ?: error("Uninitialized environment or simulation")
+            environment.simulation.let { { exec: Simulation<T, P>.() -> Unit -> it.schedule { exec.invoke(it) } } }
 
     init {
         listOf(selector, highlighter).forEach {
