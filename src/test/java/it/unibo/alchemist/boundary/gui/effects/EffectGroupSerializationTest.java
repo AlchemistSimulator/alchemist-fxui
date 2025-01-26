@@ -7,6 +7,7 @@ import it.unibo.alchemist.boundary.fxui.effects.DrawDot;
 import it.unibo.alchemist.boundary.fxui.effects.EffectStack;
 import it.unibo.alchemist.boundary.fxui.effects.serialization.EffectSerializer;
 import it.unibo.alchemist.model.Position2D;
+import java.io.IOException;
 import javafx.scene.paint.Color;
 import org.junit.jupiter.api.Test;
 
@@ -28,11 +29,13 @@ class EffectGroupSerializationTest {
     /**
      * Tests (de)serialization with default Java serialization engine.
      * 
-     * @throws Exception
+     * @throws IOException
+     *             if something goes wrong
+     * @throws ClassNotFoundException
      *             if something goes wrong
      */
     @Test
-    void testJavaSerialization() throws Exception {
+    void testJavaSerialization() throws IOException, ClassNotFoundException {
         final File file = File.createTempFile("testJavaSerialization", null);
         final var effects = this.setupEffectGroup();
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
@@ -46,12 +49,12 @@ class EffectGroupSerializationTest {
 
     /**
      * Tests (de)serialization with Google Gson serialization engine.
-     * 
-     * @throws Exception
+     *
+     * @throws IOException
      *             if something goes wrong
      */
     @Test
-    void testGsonSerialization() throws Exception {
+    void testGsonSerialization() throws IOException {
         final File file = File.createTempFile("testGsonSerialization", null);
         final var effect = this.setupEffectGroup();
         EffectSerializer.effectsToFile(file, effect);
