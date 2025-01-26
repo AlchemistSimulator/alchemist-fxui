@@ -1,5 +1,5 @@
 var publishCmd = `
-./gradlew uploadKotlin release || exit 1
+./gradlew uploadAll releaseStagingRepositoryOnMavenCentral || exit 1
 `
 var config = require('semantic-release-preconfigured-conventional-commits');
 config.plugins.push(
