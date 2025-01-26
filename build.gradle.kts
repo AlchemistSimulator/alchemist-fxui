@@ -98,6 +98,7 @@ signing {
 }
 
 publishOnCentral {
+    repoOwner = "AlchemistSimulator"
     projectLongName.set(project.properties["projectLongName"] as String)
     projectDescription.set(project.properties["projectDescription"] as String)
     scmConnection.set("scm:git:https://github.com/AlchemistSimulator/alchemist-fxui")
