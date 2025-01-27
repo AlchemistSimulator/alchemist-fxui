@@ -1,3 +1,18 @@
+## [32.56.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.56.0...32.56.1) (2025-01-27)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.10 ([#401](https://github.com/AlchemistSimulator/alchemist-fxui/issues/401)) ([d5c6bef](https://github.com/AlchemistSimulator/alchemist-fxui/commit/d5c6bef166ab61c1a31a56d3925592683b1f05a1))
+* **deps:** update plugin gitsemver to v3.1.10 ([#402](https://github.com/AlchemistSimulator/alchemist-fxui/issues/402)) ([5fb269f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5fb269fce7e661c17b2306ddd90c4df5b074f7ff))
+* **deps:** update plugin gitsemver to v3.1.8 ([#396](https://github.com/AlchemistSimulator/alchemist-fxui/issues/396)) ([384749c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/384749c556e965741d0574dd1feb0256a7e4a328))
+* **deps:** update plugin gitsemver to v3.1.9 ([#398](https://github.com/AlchemistSimulator/alchemist-fxui/issues/398)) ([95895f5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/95895f551280a3f6fbe698278adc9d0c2dd0b91f))
+* **deps:** update plugin java-qa to v1.89.0 ([#397](https://github.com/AlchemistSimulator/alchemist-fxui/issues/397)) ([d422d8f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/d422d8ff47947855aace2eec6ff94aabb3656014))
+* **deps:** update plugin java-qa to v1.90.0 ([#399](https://github.com/AlchemistSimulator/alchemist-fxui/issues/399)) ([b529d16](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b529d16bf5c1da38216cbef0930b858a1d8ae069))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.2.0 ([#400](https://github.com/AlchemistSimulator/alchemist-fxui/issues/400)) ([3a661a7](https://github.com/AlchemistSimulator/alchemist-fxui/commit/3a661a7be7cc9267a85294f9e6583bfd910034c5))
+
 ## [32.56.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.55.0...32.56.0) (2025-01-26)
 
 ### Dependency updates
