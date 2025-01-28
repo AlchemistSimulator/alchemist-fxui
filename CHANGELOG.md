@@ -1,3 +1,14 @@
+## [32.57.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.56.1...32.57.0) (2025-01-28)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v37.1.6 ([#408](https://github.com/AlchemistSimulator/alchemist-fxui/issues/408)) ([914350a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/914350a9341b6a3af64d5f2728f8c0e8685a32fb))
+* **deps:** update plugin gitsemver to v4 ([#403](https://github.com/AlchemistSimulator/alchemist-fxui/issues/403)) ([0b64a1d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0b64a1d2989c250b3c6e9b228329c5f3a977faa9))
+* **deps:** update plugin gitsemver to v4.0.1 ([#404](https://github.com/AlchemistSimulator/alchemist-fxui/issues/404)) ([52c5a39](https://github.com/AlchemistSimulator/alchemist-fxui/commit/52c5a39c91e4963475d8d7cd16ed4a5ce2f1bb45))
+* **deps:** update plugin gitsemver to v4.0.2 ([#407](https://github.com/AlchemistSimulator/alchemist-fxui/issues/407)) ([e5b835c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e5b835c8a94fbfe9c08be33aa08ea78d9d90ae12))
+* **deps:** update plugin multijvmtesting to v3.2.2 ([#405](https://github.com/AlchemistSimulator/alchemist-fxui/issues/405)) ([3355060](https://github.com/AlchemistSimulator/alchemist-fxui/commit/335506029bfd7f4c886a20bbd2450fff5f678168))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.20 ([#406](https://github.com/AlchemistSimulator/alchemist-fxui/issues/406)) ([6ed0c44](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6ed0c44ba0b23c2dbf5fe08fccc4cfa34faaebff))
+
 ## [32.56.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.56.0...32.56.1) (2025-01-27)
 
 ### Dependency updates
