@@ -1,3 +1,19 @@
+## [32.58.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.57.0...32.58.0) (2025-02-02)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v37.1.7 ([#416](https://github.com/AlchemistSimulator/alchemist-fxui/issues/416)) ([b59a10b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b59a10b694e81dc1eb3fcd915faa1811392129b8))
+* **deps:** update dependency org.danilopianini:gson-extras to v2 ([#410](https://github.com/AlchemistSimulator/alchemist-fxui/issues/410)) ([7c6e6ad](https://github.com/AlchemistSimulator/alchemist-fxui/commit/7c6e6ad33c36b7a1a2d8317d42056369c1b3eaf9))
+* **deps:** update dependency org.danilopianini:gson-extras to v3 ([#411](https://github.com/AlchemistSimulator/alchemist-fxui/issues/411)) ([a211cc7](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a211cc70afe89da8ada1f686b98dbc28b21996d9))
+* **deps:** update dependency org.danilopianini:gson-extras to v3.1.0 ([#413](https://github.com/AlchemistSimulator/alchemist-fxui/issues/413)) ([6f4663f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6f4663fa0124110ea3a085fb838765dbf9402699))
+* **deps:** update plugin java-qa to v1.91.0 ([#414](https://github.com/AlchemistSimulator/alchemist-fxui/issues/414)) ([8ae0bc8](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8ae0bc80e4e1649aba2c600b42458219ce901673))
+* **deps:** update plugin publishoncentral to v8.0.3 ([#415](https://github.com/AlchemistSimulator/alchemist-fxui/issues/415)) ([9e1890e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9e1890e9a9b281efc26eac7bbddf6a282ec648ca))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.7 ([#409](https://github.com/AlchemistSimulator/alchemist-fxui/issues/409)) ([a3c292d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a3c292dc74a8c8c7509d524539a64786066b008e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.8 ([#412](https://github.com/AlchemistSimulator/alchemist-fxui/issues/412)) ([637ea90](https://github.com/AlchemistSimulator/alchemist-fxui/commit/637ea90a9103410683f63ece45865999ccfd35a6))
+
 ## [32.57.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.56.1...32.57.0) (2025-01-28)
 
 ### Dependency updates
