@@ -1,3 +1,18 @@
+## [32.66.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.65.0...32.66.0) (2025-02-17)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v38.0.1 ([#438](https://github.com/AlchemistSimulator/alchemist-fxui/issues/438)) ([d8c32f3](https://github.com/AlchemistSimulator/alchemist-fxui/commit/d8c32f3e07c3f5ef022b9e2100209f02104c0b62))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.123 ([#433](https://github.com/AlchemistSimulator/alchemist-fxui/issues/433)) ([326e2d1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/326e2d19deaea65a7cb3d39a98aa9d8f8519ad52))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.124 ([#434](https://github.com/AlchemistSimulator/alchemist-fxui/issues/434)) ([7dc9d5a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/7dc9d5a087d1d66b2095d900e759e4aae7847ea8))
+* **deps:** update node.js to 22.14 ([#431](https://github.com/AlchemistSimulator/alchemist-fxui/issues/431)) ([17127e5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/17127e5067a96c5694c8721a260f190da0917b4b))
+* **deps:** update plugin java-qa to v1.95.0 ([#432](https://github.com/AlchemistSimulator/alchemist-fxui/issues/432)) ([33bf6dc](https://github.com/AlchemistSimulator/alchemist-fxui/commit/33bf6dc4911b76a1b35e7d83c63ed646dbae633b))
+* **deps:** update plugin java-qa to v1.95.1 ([#435](https://github.com/AlchemistSimulator/alchemist-fxui/issues/435)) ([a4820b3](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a4820b3cd70b1cbda89c8e140a8e8c9969ef625e))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.9 ([#436](https://github.com/AlchemistSimulator/alchemist-fxui/issues/436)) ([689b323](https://github.com/AlchemistSimulator/alchemist-fxui/commit/689b323bfb19314e4726b7e63e668f330f0a4899))
+
 ## [32.65.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.64.0...32.65.0) (2025-02-11)
 
 ### Dependency updates
