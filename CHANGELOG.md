@@ -1,3 +1,10 @@
+## [32.67.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.66.0...32.67.0) (2025-02-18)
+
+### Dependency updates
+
+* **api-deps:** update alchemist ([#440](https://github.com/AlchemistSimulator/alchemist-fxui/issues/440)) ([2655885](https://github.com/AlchemistSimulator/alchemist-fxui/commit/2655885bac7e4e224e5e2a2f09999eee832b08a3))
+* **deps:** update plugin com.gradle.develocity to v3.19.2 ([#441](https://github.com/AlchemistSimulator/alchemist-fxui/issues/441)) ([da1a6f8](https://github.com/AlchemistSimulator/alchemist-fxui/commit/da1a6f8c8b0800425463a297dac7cbaeeb01374e))
+
 ## [32.66.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.65.0...32.66.0) (2025-02-17)
 
 ### Dependency updates
