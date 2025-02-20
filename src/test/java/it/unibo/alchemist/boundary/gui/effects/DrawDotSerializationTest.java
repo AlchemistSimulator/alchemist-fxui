@@ -1,7 +1,7 @@
 package it.unibo.alchemist.boundary.gui.effects;
 
 import it.unibo.alchemist.boundary.fxui.effects.DrawDot;
-import it.unibo.alchemist.boundary.gui.effects.json.AbstractEffectSerializationTest;
+import it.unibo.alchemist.boundary.gui.effects.json.EffectSerializationTest;
 import it.unibo.alchemist.boundary.fxui.effects.serialization.EffectSerializer;
 import it.unibo.alchemist.test.TemporaryFile;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * JUint test for {@link DrawDot} effect serialization.
  */
-final class DrawDotSerializationTest extends AbstractEffectSerializationTest<DrawDot<?>> {
+final class DrawDotSerializationTest extends EffectSerializationTest<DrawDot<?>> {
     private static final String TEST_NAME = "TestDot";
     private static final double TEST_SIZE = 22.0;
 

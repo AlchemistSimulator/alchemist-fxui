@@ -35,6 +35,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 /**
  * Simple effect that draws a {@link Color#BLACK black} line for each
  * {@link Node} in a {@link Neighborhood}.
+ *
  * <p>
  * It's possible to set the size of the dots.
  *
@@ -67,8 +68,10 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
 
     /**
      * Empty constructor.
+     *
      * <p>
      * Name is set to default name.
+     *
      * <p>
      * Default visibility is true.
      */
@@ -78,6 +81,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
 
     /**
      * Default constructor.
+     *
      * <p>
      * Default visibility is true.
      *
@@ -95,16 +99,16 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
     protected Queue<DrawCommand<P>> consumeData() {
         final CommandQueueBuilder<P> builder = new CommandQueueBuilder<>();
         positions.forEach((position, neighbors) -> {
-            final double size = getSize();
+            final double currentSize = getSize();
             builder.addCommand((graphic, wormhole) -> {
                 final Point viewPoint = wormhole.getViewPoint(position);
-                final double startX = viewPoint.getX() - size / 2;
-                final double startY = viewPoint.getY() - size / 2;
+                final double startX = viewPoint.getX() - currentSize / 2;
+                final double startY = viewPoint.getY() - currentSize / 2;
                 neighbors.forEach(p -> {
                     final double endX = wormhole.getViewPoint(p).getX();
                     final double endY = wormhole.getViewPoint(p).getY();
                     graphic.setStroke(getColor());
-                    graphic.setLineWidth(size);
+                    graphic.setLineWidth(currentSize);
                     graphic.strokeLine(startX, startY, endX, endY);
                 });
             });
@@ -166,6 +170,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
 
     /**
      * Gets the color of the dots.
+     *
      * <p>
      * Default color should be {@link Color#BLACK black}.
      *
@@ -214,6 +219,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -235,6 +241,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.

@@ -30,6 +30,7 @@ public class FXTimeMonitor<T, P extends Position<? extends P>> extends AbstractN
      * Default serial version UID.
      */
     private static final long serialVersionUID = 1L;
+
     /**
      * Default constructor.
      */

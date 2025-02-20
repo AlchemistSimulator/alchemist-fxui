@@ -19,13 +19,14 @@ import javax.annotation.Nonnull;
 
 /**
  * Simple factory that returns the {@link DataFormat} for the specified class.
+ *
  * <p>
  * The DataFormat is cached to return only one per class and avoid
  * {@code IllegalArgumentException: DataFormat 'xxx' already exists}.
  * </p>
  *
  * @see <a href="shorturl.at/AFUV0">Issue JDK-8118672</a>
- * 
+ *
  */
 public final class DataFormatFactory {
 
@@ -34,7 +35,7 @@ public final class DataFormatFactory {
      * loaded.
      */
     private static final LoadingCache<Class<?>, DataFormat> DATA_FORMATS = CacheBuilder.newBuilder()
-            .build(new CacheLoader<Class<?>, DataFormat>() {
+            .build(new CacheLoader<>() {
                 @Override
                 public DataFormat load(final @Nonnull Class<?> key) {
                     return new DataFormat(key.getName());
@@ -42,8 +43,15 @@ public final class DataFormatFactory {
             });
 
     /**
+     * Private, empty, constructor, as this is a utility class.
+     */
+    private DataFormatFactory() {
+        throw new AssertionError("Suppress default constructor for noninstantiability");
+    }
+
+    /**
      * Static {@link DataFormat} loader for the specified class.
-     * 
+     *
      * @param object
      *            the object you want the {@code DataFormat} for
      * @return the {@code DataFormat}
@@ -54,20 +62,13 @@ public final class DataFormatFactory {
 
     /**
      * Static {@link DataFormat} loader for the specified class.
-     * 
+     *
      * @param clazz
      *            the class you want the {@code DataFormat} for
      * @return the {@code DataFormat}
      */
     public static DataFormat getDataFormat(final Class<?> clazz) {
         return DATA_FORMATS.getUnchecked(clazz);
-    }
-
-    /**
-     * Private, empty, constructor, as this is an utility class.
-     */
-    private DataFormatFactory() {
-        throw new AssertionError("Suppress default constructor for noninstantiability");
     }
 
 }

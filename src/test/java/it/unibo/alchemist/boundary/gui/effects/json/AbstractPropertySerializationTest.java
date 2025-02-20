@@ -17,10 +17,10 @@ public abstract class AbstractPropertySerializationTest {
 
     /**
      * Method that generate {@link org.junit.jupiter.api.Assertions#assertTrue(boolean)} messages.
-     * 
+     *
      * @param <T>
      *            the class wrapped by this property
-     * 
+     *
      * @param origin
      *            the original {@link Property}
      * @param deserialized
@@ -42,7 +42,7 @@ public abstract class AbstractPropertySerializationTest {
 
     /**
      * Returns the {@link Gson} {@link Type}.
-     * 
+     *
      * @return the Gson type for the tested class
      */
     protected abstract Type getGsonType();

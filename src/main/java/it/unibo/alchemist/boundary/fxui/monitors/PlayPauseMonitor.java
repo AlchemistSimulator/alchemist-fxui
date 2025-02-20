@@ -86,19 +86,19 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
     /**
      * Plays or pause the given simulation based on current simulation status.
      *
-     * @param simulation the simulation to take status from
+     * @param currentSimulation the simulation to take status from
      */
-    private void playPause(final Simulation<T, P> simulation) {
-        switch (simulation.getStatus()) {
+    private void playPause(final Simulation<T, P> currentSimulation) {
+        switch (currentSimulation.getStatus()) {
             case INIT:
             case READY:
             case PAUSED:
-                simulation.play();
+                currentSimulation.play();
                 setStatus(currentStatus);
                 setIcon(Status.RUNNING);
                 break;
             case RUNNING:
-                simulation.pause();
+                currentSimulation.pause();
                 setStatus(currentStatus);
                 setIcon(Status.PAUSED);
                 break;
@@ -159,13 +159,13 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
     /**
      * Updates internal status of the simulation.
      *
-     * @param simulation the simulation
+     * @param newSimulation the simulation
      */
-    private void update(final @Nullable Simulation<T, P> simulation) {
-        setSimulation(simulation);
+    private void update(final @Nullable Simulation<T, P> newSimulation) {
+        setSimulation(newSimulation);
         if (!isError) {
-            if (simulation != null && simulation.getStatus() != currentStatus) {
-                currentStatus = simulation.getStatus();
+            if (newSimulation != null && newSimulation.getStatus() != currentStatus) {
+                currentStatus = newSimulation.getStatus();
                 setStatus(currentStatus);
                 setIcon(currentStatus);
             }
@@ -176,6 +176,7 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
 
     /**
      * Sets the icon of the {@code Button} from the current {@link #simulation} {@link Status}.
+     *
      * <p>
      * If no {@link Simulation} is set, it will simply set {@link #PLAY_ICON}.
      *
@@ -193,6 +194,7 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
 
     /**
      * Orders the simulation to transition into a certain status.
+     *
      * @param nextStatus the status to transition into.
      */
     @SuppressFBWarnings(value = "DM_EXIT", justification = "The program needs to exit when a fatal error occurrs")
@@ -201,17 +203,19 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
             final long t = System.currentTimeMillis();
             if (nextStatus == Status.RUNNING || nextStatus == Status.PAUSED) {
                 s.waitFor(nextStatus, TRANSITION_TIMEOUT, TimeUnit.SECONDS);
-                final Status currentStatus = s.getStatus();
-                if (!currentStatus.equals(nextStatus)) {
+                final Status current = s.getStatus();
+                if (!current.equals(nextStatus)) {
                     isError = true;
                     Platform.runLater(() -> {
                         final Alert alert = new Alert(Alert.AlertType.ERROR);
                         alert.setTitle("Expected simulation status error");
-                        alert.setContentText("The expected status was "
+                        alert.setContentText(
+                                "The expected status was "
                                 + nextStatus + ", but, after waiting "
                                 + (System.currentTimeMillis() - t)
                                 + "ms, current simulation status is "
-                                + currentStatus);
+                                + current
+                        );
                         final DialogPane dialogPane = alert.getDialogPane();
                         dialogPane.setMinHeight(Region.USE_PREF_SIZE);
                         ((Stage) dialogPane

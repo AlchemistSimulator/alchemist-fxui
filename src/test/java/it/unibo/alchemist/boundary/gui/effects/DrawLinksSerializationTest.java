@@ -1,7 +1,7 @@
 package it.unibo.alchemist.boundary.gui.effects;
 
 import it.unibo.alchemist.boundary.fxui.effects.DrawLinks;
-import it.unibo.alchemist.boundary.gui.effects.json.AbstractEffectSerializationTest;
+import it.unibo.alchemist.boundary.gui.effects.json.EffectSerializationTest;
 import it.unibo.alchemist.boundary.fxui.effects.serialization.EffectSerializer;
 import it.unibo.alchemist.model.Position2D;
 import it.unibo.alchemist.test.TemporaryFile;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * JUnit test for {@link DrawLinks} effect serialization.
  */
-final class DrawLinksSerializationTest extends AbstractEffectSerializationTest<DrawLinks<?>> {
+final class DrawLinksSerializationTest extends EffectSerializationTest<DrawLinks<?>> {
     private static final String TEST_NAME = "TestLinks";
     private static final double TEST_SIZE = 12.0;
 

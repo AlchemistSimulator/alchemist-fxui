@@ -51,6 +51,7 @@ public interface FXOutputMonitor<T, P extends Position2D<? extends P>> extends O
 
     /**
      * Setter method for the effects to draw.
+     *
      * <p>
      * All previous set {@link EffectFX Effects} are removed.
      *
@@ -108,12 +109,14 @@ public interface FXOutputMonitor<T, P extends Position2D<? extends P>> extends O
 
     /**
      * Returns the keyboard listener associated with this monitor.
+     *
      * @return the listener
      */
     KeyboardActionListener getKeyboardListener();
 
     /**
      * Returns the JavaFX Node that is this monitor.
+     *
      * @return the node
      */
     Node asJavaFXNode();

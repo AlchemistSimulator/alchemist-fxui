@@ -28,6 +28,7 @@ import java.util.Queue;
 /**
  * It models an abstract implementation of the {@link EffectFX effect} interface,
  * implementing default name and visibility properties.
+ *
  * <p>
  * The effect behavior can be implemented via {@link #computeDrawCommands(Environment)} template method.
  *
@@ -51,6 +52,7 @@ public abstract class AbstractEffect<P extends Position2D<? extends P>> implemen
 
     /**
      * 0-ary constructor.
+     *
      * <p>
      * Default visibility is {@value DEFAULT_VISIBILITY}.
      */
@@ -60,6 +62,7 @@ public abstract class AbstractEffect<P extends Position2D<? extends P>> implemen
 
     /**
      * Constructor that lets set the name of the effect.
+     *
      * <p>
      * Default visibility is {@value DEFAULT_VISIBILITY}.
      *
@@ -171,6 +174,7 @@ public abstract class AbstractEffect<P extends Position2D<? extends P>> implemen
 
     /**
      * The method extrapolates data from environment.
+     *
      * <p>
      * It is strongly recommended not to keep any reference to {@link Environment}-
      * or {@link it.unibo.alchemist.core.Simulation}-specific objects.
@@ -202,6 +206,7 @@ public abstract class AbstractEffect<P extends Position2D<? extends P>> implemen
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -224,6 +229,7 @@ public abstract class AbstractEffect<P extends Position2D<? extends P>> implemen
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.
@@ -239,8 +245,7 @@ public abstract class AbstractEffect<P extends Position2D<? extends P>> implemen
      * primitive data types supported by {@code DataOutput}.</blockquote>
      *
      * @param stream the input stream
-     * @throws java.io.UTFDataFormatException if read bytes do not represent a
-     * valid modified UTF-8 encoding of a string
+     * @throws java.io.UTFDataFormatException if read bytes do not represent a valid modified UTF-8 encoding of a string
      * @throws java.io.EOFException if the end of file is reached
      * @throws ClassNotFoundException if the class can't be found
      * @throws IOException if other I/O error has occurred

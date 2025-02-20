@@ -127,7 +127,7 @@ public class SingleRunApp<T, P extends Position2D<P>> extends Application {
      */
     public void addParam(final String name, final String value) {
         checkIfInitialized();
-        if (value == null || value.equals("")) {
+        if (value == null || value.isEmpty()) {
             throw new IllegalArgumentException("The given param is not named");
         }
         params.put(name, value);
@@ -243,7 +243,7 @@ public class SingleRunApp<T, P extends Position2D<P>> extends Application {
      * The method schedules on the {@link Simulation} thread the
      * initialization of given {@link OutputMonitor OutputMonitors}.
      *
-     * @param simulation the simulation to
+     * @param currentSimulation the simulation to
      *      {@link Simulation#schedule(org.jooq.lambda.fi.lang.CheckedRunnable) schedule} initialization and to take
      *      {@link Environment} from
      * @param monitors   the {@code OutputMonitors} to
@@ -253,13 +253,13 @@ public class SingleRunApp<T, P extends Position2D<P>> extends Application {
      */
     @SafeVarargs
     private void initMonitors(
-            final @Nonnull Simulation<T, P> simulation,
-            final @Nullable OutputMonitor<T, P>... monitors
+        final @Nonnull Simulation<T, P> currentSimulation,
+        final @Nullable OutputMonitor<T, P>... monitors
     ) {
         if (monitors != null) {
             for (final OutputMonitor<T, P> m : monitors) {
                 if (m != null) {
-                    simulation.schedule(() -> m.initialized(simulation.getEnvironment()));
+                    currentSimulation.schedule(() -> m.initialized(currentSimulation.getEnvironment()));
                 }
             }
         }
@@ -267,6 +267,7 @@ public class SingleRunApp<T, P extends Position2D<P>> extends Application {
 
     /**
      * Initializes the key bindings.
+     *
      * <p>
      * Should be overridden to implement keyboard interaction with the GUI.
      *
@@ -290,12 +291,12 @@ public class SingleRunApp<T, P extends Position2D<P>> extends Application {
     /**
      * The method parses the given parameters from a key-value map.
      *
-     * @param params the map of parameters name and respective values
+     * @param parameters the map of parameters name and respective values
      * @throws IllegalArgumentException if the value is not valid for the parameter
      * @see Parameters#getNamed()
      */
-    private void parseParams(final Map<String, String> params) {
-        params.forEach((key, value) -> {
+    private void parseParams(final Map<String, String> parameters) {
+        parameters.forEach((key, value) -> {
             if (USE_EFFECT_GROUPS_FROM_FILE.equals(key)) {
                 try {
                     effectGroups.addAll(EffectSerializer.effectGroupsFromFile(new File(value)));
@@ -320,7 +321,7 @@ public class SingleRunApp<T, P extends Position2D<P>> extends Application {
     @Contract("null -> fail")
     @SuppressWarnings("unchecked")
     private void initDisplayMonitor(final String className) {
-        if (className == null || className.equals("")) {
+        if (className == null || className.isEmpty()) {
             throw new IllegalArgumentException();
         }
         try {
@@ -366,12 +367,12 @@ public class SingleRunApp<T, P extends Position2D<P>> extends Application {
     /**
      * Adds the effects to the current effects.
      *
-     * @param effectGroups the group of effects to add
+     * @param additionalGroups the group of effects to add
      * @throws IllegalStateException if the application is already started
      */
-    public void addEffectGroups(final Collection<EffectGroup<P>> effectGroups) {
+    public void addEffectGroups(final Collection<EffectGroup<P>> additionalGroups) {
         checkIfInitialized();
-        this.effectGroups.addAll(effectGroups);
+        this.effectGroups.addAll(additionalGroups);
     }
 
     /**

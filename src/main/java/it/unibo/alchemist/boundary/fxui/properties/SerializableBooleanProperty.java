@@ -75,7 +75,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
 
     /**
      * Getter method for unused field bean.
-     * 
+     *
      * @return null
      */
     @Override
@@ -85,7 +85,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
 
     /**
      * Getter method for the name of the property.
-     * 
+     *
      * @return the name of the property
      */
     @Override
@@ -95,7 +95,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
 
     /**
      * Setter method for the name of the property.
-     * 
+     *
      * @param name
      *            the name to set
      */
@@ -105,6 +105,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -116,7 +117,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
      * {@code ObjectOutputStream} using the {@code writeObject} method or by
      * using the methods for primitive data types supported by
      * {@code DataOutput}. </blockquote>
-     * 
+     *
      * @param out
      *            the output stream
      */
@@ -127,6 +128,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.
@@ -140,7 +142,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
      * saved by writing the individual fields to the {@code ObjectOutputStream}
      * using the {@code writeObject} method or by using the methods for
      * primitive data types supported by {@code DataOutput}. </blockquote>
-     * 
+     *
      * @param in
      *            the input stream
      */
@@ -190,7 +192,7 @@ public class SerializableBooleanProperty extends BooleanPropertyBase implements 
      * Returns a {@link com.google.gson.JsonSerializer} and {@link com.google.gson.JsonDeserializer} combo class
      * to be used as a {@code TypeAdapter} for this
      * {@code SerializableBooleanProperty}.
-     * 
+     *
      * @return the {@code TypeAdapter} for this class
      */
     public static PropertyTypeAdapter<SerializableBooleanProperty> getTypeAdapter() {

@@ -19,9 +19,10 @@ import java.util.Objects;
 
 /**
  * {@link javafx.beans.property.Property} designed to wrap an {@link Enum enum}.
+ *
  * <p>
  * It is based on {@code ObjectPropertyBase} and is {@code Serializable}.
- * 
+ *
  * @param <T>
  *            the enumeration wrapped
  */
@@ -73,7 +74,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
 
     /**
      * Getter method for unused field bean.
-     * 
+     *
      * @return null
      */
     @Override
@@ -83,7 +84,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
 
     /**
      * Getter method for the name of the property.
-     * 
+     *
      * @return the name of the property
      */
     @Override
@@ -93,7 +94,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
 
     /**
      * Setter method for the name of the property.
-     * 
+     *
      * @param name
      *            the name to set
      */
@@ -103,7 +104,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
 
     /**
      * Returns the elements of the enum class wrapped by this {@link javafx.beans.property.Property}.
-     * 
+     *
      * @return the elements of the enum class
      * @throws IllegalStateException
      *             If this {@link javafx.beans.property.Property} is not wrapping any enum
@@ -119,6 +120,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -130,7 +132,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
      * {@code ObjectOutputStream} using the {@code writeObject} method or by
      * using the methods for primitive data types supported by
      * {@code DataOutput}. </blockquote>
-     * 
+     *
      * @param out
      *            the output stream
      */
@@ -141,6 +143,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.
@@ -154,7 +157,7 @@ public class SerializableEnumProperty<T extends Enum<T>> extends ObjectPropertyB
      * saved by writing the individual fields to the {@code ObjectOutputStream}
      * using the {@code writeObject} method or by using the methods for
      * primitive data types supported by {@code DataOutput}. </blockquote>
-     * 
+     *
      * @param in
      *            the input stream
      */

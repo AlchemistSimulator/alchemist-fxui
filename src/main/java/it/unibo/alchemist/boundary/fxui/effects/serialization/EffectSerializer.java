@@ -9,7 +9,6 @@
 
 package it.unibo.alchemist.boundary.fxui.effects.serialization;
 
-import com.google.common.base.Charsets;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -28,6 +27,7 @@ import java.io.Writer;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -39,10 +39,12 @@ import org.kaikikm.threadresloader.ResourceLoader;
 
 /**
  * Serialize Alchemist {@link EffectGroup effect groups} from/to file in human-readable format (JSON).
+ *
  * <p>
  * This class can be considered a clean boundary between Google Gson library and
  * the needs of this project, providing methods to serialize and deserialize
  * from JSON files instances of EffectGroup.
+ *
  * <p>
  * The {@link Gson GSON} object used for serialization is statically updated at
  * runtime with all available {@code TypeAdapters} and
@@ -52,7 +54,6 @@ import org.kaikikm.threadresloader.ResourceLoader;
  */
 public final class EffectSerializer {
 
-    private static final String RAWTYPES = "rawtypes";
     /**
      * Default extension of serialized groups of effects.
      */
@@ -60,30 +61,32 @@ public final class EffectSerializer {
     /**
      * Default charset of serialized groups of effects.
      */
-    public static final Charset DEFAULT_CHARSET = Charsets.UTF_8;
+    public static final Charset DEFAULT_CHARSET = StandardCharsets.UTF_8;
     /**
      * {@code Type} of an {@code EffectGroup}.
      */
     private static final TypeToken<EffectGroup<?>> EFFECT_GROUP_TYPE = new TypeToken<>() {
     };
+    private static final String IT_UNIBO_ALCHEMIST = "it.unibo.alchemist";
+    private static final String RAWTYPES = "rawtypes";
     /**
      * Set of available {@link EffectFX effect}s found by reflection.
      */
     @SuppressWarnings(RAWTYPES)
     private static final List<Class<? extends EffectFX>> EFFECTS =
-            ClassPathScanner.subTypesOf(EffectFX.class, "it.unibo.alchemist");
+            ClassPathScanner.subTypesOf(EffectFX.class, IT_UNIBO_ALCHEMIST);
     /**
      * Set of available {@link EffectGroup group}s found by reflection.
      */
     @SuppressWarnings(RAWTYPES)
     private static final List<Class<? extends EffectGroup>> GROUPS =
-            ClassPathScanner.subTypesOf(EffectGroup.class, "it.unibo.alchemist");
+            ClassPathScanner.subTypesOf(EffectGroup.class, IT_UNIBO_ALCHEMIST);
     /**
      * Set of available {@link Property Properties} found by reflection.
      */
     @SuppressWarnings(RAWTYPES) // Needed to make the compiler accept the constant
     private static final List<Class<? extends Property>> PROPERTIES =
-            ClassPathScanner.subTypesOf(Property.class, "it.unibo.alchemist");
+            ClassPathScanner.subTypesOf(Property.class, IT_UNIBO_ALCHEMIST);
     /**
      * {@link RuntimeTypeAdapterFactory} to serialize and deserialize {@link EffectFX effects} properly.
      */
@@ -137,6 +140,7 @@ public final class EffectSerializer {
 
     /**
      * The method registers a {@link com.google.gson.TypeAdapter} for given {@link Class classes}.
+     *
      * <p>
      * The class must have a method called {@value #TARGET_METHOD_NAME}.
      *
@@ -383,6 +387,7 @@ public final class EffectSerializer {
      * Returns the internal static instance of {@link Gson} object used for
      * serialization. It includes all needed {@link com.google.gson.TypeAdapter}s for
      * {@link EffectFX Effects} and {@link Property Properties} serialization.
+     *
      * <p>
      * Useful for serialize related objects not directly managed by this class.
      *

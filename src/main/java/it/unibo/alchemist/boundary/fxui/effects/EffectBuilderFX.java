@@ -83,6 +83,7 @@ public class EffectBuilderFX {
     /**
      * Asks the user to chose an effect and returns a new instance of the
      * desired class.
+     *
      * <p>
      * Call this method is the same as calling
      * {@link EffectBuilderFX#getResult()} and {@link #instantiateEffect(Class)}}.

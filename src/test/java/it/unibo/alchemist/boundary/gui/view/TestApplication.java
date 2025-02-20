@@ -20,6 +20,7 @@ public class TestApplication extends Application {
 
     /**
      * {@inheritDoc}
+     *
      * <p>
      * It does nothing.
      */

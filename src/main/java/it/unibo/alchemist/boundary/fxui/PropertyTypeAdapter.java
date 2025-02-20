@@ -22,7 +22,7 @@ import javafx.beans.property.Property;
 /**
  * This interface lets implement classes for JavaFX custom property
  * serialization.
- * 
+ *
  * @param <T>
  *            the {@link Property} type
  */
@@ -34,9 +34,9 @@ public interface PropertyTypeAdapter<T extends Property<?>> extends JsonSerializ
     /** Static default JSON key for field "bean". */
     String BEAN = "bean";
 
-    @Override 
+    @Override
     T deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context);
 
-    @Override 
+    @Override
     JsonElement serialize(T src, Type typeOfSrc, JsonSerializationContext context);
 }

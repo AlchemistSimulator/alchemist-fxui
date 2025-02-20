@@ -66,7 +66,7 @@ public class EffectCell<P extends Position2D<? extends P>> extends AbstractEffec
                     propertiesDrawer.setSidePane(FXResourceLoader.getLayout(propertiesController,
                             EffectPropertiesController.EFFECT_PROPERTIES_LAYOUT));
                     propertiesController.effectNameProperty().bindBidirectional(this.getLabel().textProperty());
-                } catch (IOException e) {
+                } catch (final IOException e) {
                     throw new IllegalStateException(
                             "Could not initialize side pane for properties of effect "
                                     + this.getItem().toString() + ": ",

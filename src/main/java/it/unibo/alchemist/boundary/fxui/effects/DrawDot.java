@@ -35,6 +35,7 @@ import java.util.stream.Collectors;
 /**
  * Simple effect that draws a {@link Color#BLACK black} dot for each
  * {@link it.unibo.alchemist.model.Node}.
+ *
  * <p>
  * It's possible to set the size of the dots.
  *
@@ -71,8 +72,10 @@ public class DrawDot<P extends Position2D<? extends P>> extends AbstractEffect<P
 
     /**
      * Empty constructor.
+     *
      * <p>
      * Name is set to default name.
+     *
      * <p>
      * Default visibility is true.
      */
@@ -82,6 +85,7 @@ public class DrawDot<P extends Position2D<? extends P>> extends AbstractEffect<P
 
     /**
      * Default constructor.
+     *
      * <p>
      * Default visibility is true.
      *
@@ -97,15 +101,15 @@ public class DrawDot<P extends Position2D<? extends P>> extends AbstractEffect<P
      */
     @Override
     protected Queue<DrawCommand<P>> consumeData() {
-        final double size = getSize();
+        final double currentSize = getSize();
         return positions
                 .stream()
                 .<DrawCommand<P>>map((P position) -> (final GraphicsContext graphic, final Wormhole2D<P> wormhole) -> {
             final Point viewPoint = wormhole.getViewPoint(position);
-            final double startX = viewPoint.getX() - size / 2;
-            final double startY = viewPoint.getY() - size / 2;
+            final double startX = viewPoint.getX() - currentSize / 2;
+            final double startY = viewPoint.getY() - currentSize / 2;
             graphic.setFill(getColor());
-            graphic.fillOval((int) startX, (int) startY, (int) size, (int) size);
+            graphic.fillOval((int) startX, (int) startY, (int) currentSize, (int) currentSize);
         }).collect(Collectors.toCollection(Queues::newConcurrentLinkedQueue));
     }
 
@@ -161,6 +165,7 @@ public class DrawDot<P extends Position2D<? extends P>> extends AbstractEffect<P
 
     /**
      * Gets the color of the dots.
+     *
      * <p>
      * Default color should be {@link Color#BLACK black}.
      *
@@ -181,6 +186,7 @@ public class DrawDot<P extends Position2D<? extends P>> extends AbstractEffect<P
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -206,6 +212,7 @@ public class DrawDot<P extends Position2D<? extends P>> extends AbstractEffect<P
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.

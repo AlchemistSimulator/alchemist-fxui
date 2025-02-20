@@ -1,7 +1,7 @@
 package it.unibo.alchemist.boundary.gui.effects;
 
 import it.unibo.alchemist.boundary.fxui.effects.DrawColoredDot;
-import it.unibo.alchemist.boundary.gui.effects.json.AbstractEffectSerializationTest;
+import it.unibo.alchemist.boundary.gui.effects.json.EffectSerializationTest;
 import it.unibo.alchemist.boundary.fxui.effects.serialization.EffectSerializer;
 import it.unibo.alchemist.test.TemporaryFile;
 import javafx.scene.paint.Color;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * JUnit test for {@link DrawColoredDot} effect serialization.
  */
-final class DrawColoredDotSerializationTest extends AbstractEffectSerializationTest<DrawColoredDot<?>> {
+final class DrawColoredDotSerializationTest extends EffectSerializationTest<DrawColoredDot<?>> {
     private static final String TEST_NAME = "TestDot";
     private static final double TEST_SIZE = 25.0;
     private static final Color TEST_COLOR = Color.CYAN;

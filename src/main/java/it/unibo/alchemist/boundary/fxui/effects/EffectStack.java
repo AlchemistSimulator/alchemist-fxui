@@ -93,6 +93,7 @@ public final class EffectStack<P extends Position2D<? extends P>> implements Eff
 
     /**
      * Puts the effects in the group, giving it the maximum priority.
+     *
      * <p>
      * Acts nearly the same as using {@link #add(EffectFX)} or
      * {@link #offer(EffectFX)}.
@@ -120,6 +121,7 @@ public final class EffectStack<P extends Position2D<? extends P>> implements Eff
 
     /**
      * Removes the effect with maximum priority and returns it.
+     *
      * <p>
      * Acts nearly the same as using {@link #remove()} or {@link #poll()}.
      *
@@ -152,12 +154,12 @@ public final class EffectStack<P extends Position2D<? extends P>> implements Eff
     }
 
     @Override
-    public void setVisibilityOf(final EffectFX<P> effect, final boolean visibility) {
+    public void setVisibilityOf(final EffectFX<P> effect, final boolean newVisibility) {
         final int effectIndex = this.search(effect);
         if (effectIndex == -1) {
             throw new IllegalArgumentException(CANNOT_FIND_EFFECT);
         }
-        this.effects.get(effectIndex).setVisibility(visibility);
+        this.effects.get(effectIndex).setVisibility(newVisibility);
     }
 
     @Override
@@ -298,6 +300,7 @@ public final class EffectStack<P extends Position2D<? extends P>> implements Eff
 
     /**
      * Returns the effect with maximum priority, without removing it.
+     *
      * <p>
      * See {@link Queue#peek()}.
      *

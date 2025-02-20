@@ -28,15 +28,15 @@ import java.util.Objects;
  * value and to be serializable.
  */
 public class RangedIntegerProperty extends IntegerPropertyBase implements Serializable {
-    /** Default Serial Version UID. */
-    private static final long serialVersionUID = 1L;
-
-    private static final Integer DEFAULT_MAX_VALUE = Integer.MAX_VALUE;
-    private static final Integer DEFAULT_MIN_VALUE = Integer.MIN_VALUE;
     /** Error for exceeding upper bound. */
     protected static final String TOO_BIG_MESSAGE = "Provided value is bigger than the upper bound";
     /** Error for exceeding lower bound. */
     protected static final String TOO_SMALL_MESSAGE = "Provided value is smaller than the lower bound";
+
+    /** Default Serial Version UID. */
+    private static final long serialVersionUID = 1L;
+    private static final Integer DEFAULT_MAX_VALUE = Integer.MAX_VALUE;
+    private static final Integer DEFAULT_MIN_VALUE = Integer.MIN_VALUE;
 
     private int lowerBound;
     private int upperBound;
@@ -68,6 +68,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
     /**
      * Based on constructor of {@link IntegerPropertyBase}, adds the specified
      * bounds.
+     *
      * <p>
      * Initial value is set to 0.
      *
@@ -104,9 +105,10 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
     /**
      * Based on constructor of {@link IntegerPropertyBase}, adds the specified
      * bounds.
+     *
      * <p>
      * Initial value is set to 0.
-     * 
+     *
      * @param lowerBound
      *            the lower bound for the wrapped value to be considered
      *            acceptable
@@ -120,6 +122,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * The constructor of {@link IntegerPropertyBase}.
+     *
      * <p>
      * Bounds are set to {@link Integer#MAX_VALUE} and
      * {@link Integer#MIN_VALUE}.
@@ -135,8 +138,10 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * The constructor of {@link IntegerPropertyBase}.
+     *
      * <p>
      * Initial value is set to 0.
+     *
      * <p>
      * Bounds are set to {@link Integer#MAX_VALUE} and
      * {@link Integer#MIN_VALUE}.
@@ -150,6 +155,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * The constructor of {@link IntegerPropertyBase}.
+     *
      * <p>
      * Bounds are set to {@link Integer#MAX_VALUE} and
      * {@link Integer#MIN_VALUE}.
@@ -163,8 +169,10 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * The constructor of {@link IntegerPropertyBase}.
+     *
      * <p>
      * Initial value is set to 0.
+     *
      * <p>
      * Bounds are set to {@link Integer#MAX_VALUE} and
      * {@link Integer#MIN_VALUE}.
@@ -175,7 +183,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Getter method for unused field bean.
-     * 
+     *
      * @return null
      */
     @Override
@@ -185,7 +193,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Getter method for the name of the property.
-     * 
+     *
      * @return the name of the property
      */
     @Override
@@ -195,7 +203,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Setter method for the name of the property.
-     * 
+     *
      * @param name
      *            the name to set
      */
@@ -205,7 +213,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * {@inheritDoc}
-     * 
+     *
      * @throws IllegalArgumentException
      *             if the provided value is out of the specified range
      */
@@ -222,7 +230,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * {@inheritDoc}
-     * 
+     *
      * @throws IllegalArgumentException
      *             if the provided value is out of the specified range
      */
@@ -243,7 +251,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Getter method for the lower bound.
-     * 
+     *
      * @return the lower bound
      */
     public int getLowerBound() {
@@ -252,7 +260,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Setter method for the lower bound.
-     * 
+     *
      * @param lowerBound
      *            the lower bound
      */
@@ -262,7 +270,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Getter method for the upper bound.
-     * 
+     *
      * @return the upper bound
      */
     public int getUpperBound() {
@@ -271,7 +279,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Setter method for the upper bound.
-     * 
+     *
      * @param upperBound
      *            the upper bound
      */
@@ -281,6 +289,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -292,7 +301,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
      * {@code ObjectOutputStream} using the {@code writeObject} method or by
      * using the methods for primitive data types supported by
      * {@code DataOutput}. </blockquote>
-     * 
+     *
      * @param out
      *            the output stream
      */
@@ -305,6 +314,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.
@@ -318,7 +328,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
      * saved by writing the individual fields to the {@code ObjectOutputStream}
      * using the {@code writeObject} method or by using the methods for
      * primitive data types supported by {@code DataOutput}. </blockquote>
-     * 
+     *
      * @param in
      *            the input stream
      */
@@ -376,7 +386,7 @@ public class RangedIntegerProperty extends IntegerPropertyBase implements Serial
      * Returns a {@link com.google.gson.JsonSerializer} and {@link com.google.gson.JsonDeserializer} combo class
      * to be used as a {@code TypeAdapter} for this
      * {@code RangedIntegerProperty}.
-     * 
+     *
      * @return the {@code TypeAdapter} for this class
      */
     public static PropertyTypeAdapter<RangedIntegerProperty> getTypeAdapter() {

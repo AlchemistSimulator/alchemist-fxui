@@ -195,6 +195,7 @@ public class EffectGroupCell<P extends Position2D<? extends P>> extends Abstract
 
     /**
      * {@inheritDoc}
+     *
      * <p>
      * The side drawer opened by this cell is also rebuilt.
      */

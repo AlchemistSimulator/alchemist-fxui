@@ -185,8 +185,7 @@ public class EffectsGroupBarController<P extends Position2D<? extends P>> implem
      * Getter method and lazy initializer for the internal
      * {@link ObservableList}.
      *
-     * @return the {@code ObservableList} associated to the controlled
-     * {@link ListView}
+     * @return the {@code ObservableList} associated to the controlled {@link ListView}
      */
     public ObservableList<EffectGroup<P>> getObservableEffectsList() {
         if (this.observableEffectsList == null) {

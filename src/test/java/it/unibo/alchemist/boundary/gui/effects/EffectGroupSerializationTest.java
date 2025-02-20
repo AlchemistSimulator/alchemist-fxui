@@ -28,7 +28,7 @@ class EffectGroupSerializationTest {
 
     /**
      * Tests (de)serialization with default Java serialization engine.
-     * 
+     *
      * @throws IOException
      *             if something goes wrong
      * @throws ClassNotFoundException
@@ -65,7 +65,7 @@ class EffectGroupSerializationTest {
     /**
      * Method that generate {@link org.junit.jupiter.api.Assertions#assertTrue(boolean) assertTrue()}
      * messages.
-     * 
+     *
      * @param origin
      *            the original {@link EffectFX effect}
      * @param deserialized

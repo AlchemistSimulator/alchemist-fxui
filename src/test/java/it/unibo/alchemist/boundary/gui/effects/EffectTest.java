@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * Test class for {@link AbstractEffect} static comparison methods.
  */
-class AbstractEffectTest {
+class EffectTest {
     private static final String TEST_NAME = "Test";
 
     /**

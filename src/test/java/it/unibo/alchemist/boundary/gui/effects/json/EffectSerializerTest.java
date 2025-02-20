@@ -102,6 +102,7 @@ class EffectSerializerTest {
 
     /**
      * Tests loading effects from resources.
+     *
      * @throws IOException if something goes wrong
      */
     @Test

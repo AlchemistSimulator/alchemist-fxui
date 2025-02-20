@@ -63,6 +63,7 @@ import java.util.stream.Collectors;
 
 /**
  * This class models a JavaFX controller for EffectProperties.fxml.
+ *
  * <p>
  * Using the FXML design it builds the basic components, then using reflection
  * on the effect specified in {@link #EffectPropertiesController(EffectFX, JFXDrawersStack, JFXDrawer) constructor}

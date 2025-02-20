@@ -132,6 +132,7 @@ public class SerializableStringProperty extends StringPropertyBase implements Se
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -153,6 +154,7 @@ public class SerializableStringProperty extends StringPropertyBase implements Se
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.

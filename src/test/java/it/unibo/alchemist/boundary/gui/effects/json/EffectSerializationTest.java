@@ -15,16 +15,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * Abstract class that provides a common base of methods for effects
  * serialization test.
- * 
+ *
  * @param <T>
  *            the type of effect
  */
-public class AbstractEffectSerializationTest<T extends EffectFX<?>> {
+public class EffectSerializationTest<T extends EffectFX<?>> {
 
     /**
      * Method that generate {@link org.junit.jupiter.api.Assertions#assertTrue(boolean)}
      * messages.
-     * 
+     *
      * @param origin
      *            the original {@link EffectFX effect}
      * @param deserialized
@@ -42,7 +42,6 @@ public class AbstractEffectSerializationTest<T extends EffectFX<?>> {
     }
 
     /**
-     *
      * Serializes an effect, reloads it, and verifies that the serialized version is equal to the original one.
      *
      * @param effect the effect to serialize

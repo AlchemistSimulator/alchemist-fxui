@@ -106,6 +106,7 @@ public class ButtonsBarController<P extends Position2D<? extends P>> implements 
     /**
      * Same as {@link #ButtonsBarController() default constructor}, but it lets specify an
      *      {@link it.unibo.alchemist.boundary.OutputMonitor} to display the effects.
+     *
      * <p>
      * Useful to pass to {@link EffectsGroupBarController}, {@link EffectBarController}
      * and {@link EffectPropertiesController}.
@@ -139,6 +140,7 @@ public class ButtonsBarController<P extends Position2D<? extends P>> implements 
      * Same as {@link #ButtonsBarController() default constructor}, but it lets specify
      * an {@link it.unibo.alchemist.boundary.OutputMonitor} to display the effects,
      * the play/pause {@link Button}, a {@link Label} for the steps and a {@link Label} for the time.
+     *
      * <p>
      * Useful to pass to {@link EffectsGroupBarController}, {@link EffectBarController}
      * and {@link EffectPropertiesController}.

@@ -56,7 +56,7 @@ import java.util.Optional;
  *            {@link EffectGroup}
  */
 @SuppressFBWarnings(
-        value = { "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE" },
+        value = "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
         justification = "A ChoiceDialog is always in its own stage."
 )
 public abstract class AbstractEffectCell<T> extends ListCell<T> {
@@ -80,7 +80,7 @@ public abstract class AbstractEffectCell<T> extends ListCell<T> {
      * @param nodes the nodes to inject
      */
     @SuppressFBWarnings(
-            value = { "MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR" },
+            value = "MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR",
             justification = "startDragNDrop is final"
     )
     public AbstractEffectCell(final DataFormat dataFormat, final Node... nodes) {
@@ -305,7 +305,8 @@ public abstract class AbstractEffectCell<T> extends ListCell<T> {
             throw new IllegalArgumentException(WRONG_POS);
         }
         try {
-            final int col, row;
+            final int col;
+            final int row;
             if (position == 0) {
                 col = 0;
                 row = 0;

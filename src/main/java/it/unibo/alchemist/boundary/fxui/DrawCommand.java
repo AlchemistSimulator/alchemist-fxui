@@ -32,9 +32,7 @@ public interface DrawCommand<P extends Position2D<? extends P>>
      * The method consumes a graphic and a wormhole to draw something.
      *
      * @param graphic  the {@link GraphicsContext} of a JavaFX {@link javafx.scene.canvas.Canvas}
-     * @param wormhole the {@link Wormhole2D Wormhole} that maps
-     * {@link Environment}
-     * {@link Position positions}
+     * @param wormhole the {@link Wormhole2D Wormhole} that maps {@link Environment} {@link Position positions}
      *                 to GUI positions
      */
     @Override

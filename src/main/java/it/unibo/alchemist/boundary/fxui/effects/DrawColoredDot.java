@@ -29,6 +29,7 @@ import javafx.scene.paint.Color;
 
 /**
  * Simple effect that draws a colored dot for each {@link Node}.
+ *
  * <p>
  * It's possible to set the size and the color of the dots.
  *
@@ -52,8 +53,10 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
 
     /**
      * Empty constructor.
+     *
      * <p>
      * Name is set to default name.
+     *
      * <p>
      * Default visibility is true.
      */
@@ -63,6 +66,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
 
     /**
      * Default constructor.
+     *
      * <p>
      * Default visibility is true.
      *
@@ -116,6 +120,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
 
     /**
      * {@inheritDoc}
+     *
      * <p>
      * Updates also all color-related properties.
      */
@@ -258,6 +263,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code writeObject} method is
      * responsible for writing the state of the object for its particular class
@@ -285,6 +291,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
 
     /**
      * Method needed for well working serialization.
+     *
      * <p>
      * From {@link java.io.Serializable}: <blockquote>The {@code readObject} method is
      * responsible for reading from the stream and restoring the classes fields.
