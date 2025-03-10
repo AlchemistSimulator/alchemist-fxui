@@ -1,3 +1,10 @@
+## [32.73.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.72.0...32.73.0) (2025-03-10)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v41 ([#463](https://github.com/AlchemistSimulator/alchemist-fxui/issues/463)) ([5c832a5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5c832a5ae85650e93d4e85405b3aaa404648acb6))
+* **deps:** update plugin tasktree to v4.0.1 ([#462](https://github.com/AlchemistSimulator/alchemist-fxui/issues/462)) ([5f219be](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5f219be9a26a8a950122f5baaabd26a9fbbb8b10))
+
 ## [32.72.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.71.0...32.72.0) (2025-03-07)
 
 ### Dependency updates
