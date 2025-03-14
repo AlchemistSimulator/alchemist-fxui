@@ -79,10 +79,6 @@ public abstract class AbstractEffectCell<T> extends ListCell<T> {
      * @param dataFormat the {@link DataFormat} for this cell
      * @param nodes the nodes to inject
      */
-    @SuppressFBWarnings(
-            value = "MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR",
-            justification = "startDragNDrop is final"
-    )
     public AbstractEffectCell(final DataFormat dataFormat, final Node... nodes) {
         super();
         this.dataFormat = dataFormat;

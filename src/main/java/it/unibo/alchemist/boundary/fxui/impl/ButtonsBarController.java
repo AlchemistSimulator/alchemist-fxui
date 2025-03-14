@@ -48,10 +48,7 @@ import java.util.ResourceBundle;
  *
  * @param <P> the position type
  */
-@SuppressFBWarnings(
-        value = { "NP_NULL_ON_SOME_PATH", "EI_EXPOSE_REP2" },
-        justification = "Null checks are performed in the initialize function"
-)
+@SuppressFBWarnings(value = "EI_EXPOSE_REP2")
 public class ButtonsBarController<P extends Position2D<? extends P>> implements Initializable {
     /**
      * Layout path.

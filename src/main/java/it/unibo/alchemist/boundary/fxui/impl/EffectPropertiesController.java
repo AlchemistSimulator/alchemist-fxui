@@ -69,10 +69,7 @@ import java.util.stream.Collectors;
  * on the effect specified in {@link #EffectPropertiesController(EffectFX, JFXDrawersStack, JFXDrawer) constructor}
  * it builds up the other effect-specific controls.
  */
-@SuppressFBWarnings(
-        value = { "NP_NULL_ON_SOME_PATH", "EI_EXPOSE_REP2" },
-        justification = "Using assert to null-check avoids the possibility of null references"
-)
+@SuppressFBWarnings("EI_EXPOSE_REP2")
 public class EffectPropertiesController implements Initializable {
     /**
      * Layout path.

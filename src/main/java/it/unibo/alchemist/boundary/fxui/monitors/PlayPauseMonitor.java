@@ -197,7 +197,6 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
      *
      * @param nextStatus the status to transition into.
      */
-    @SuppressFBWarnings(value = "DM_EXIT", justification = "The program needs to exit when a fatal error occurrs")
     private void setStatus(final Status nextStatus) {
         getSimulation().ifPresent(s -> {
             final long t = System.currentTimeMillis();
