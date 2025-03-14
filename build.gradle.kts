@@ -63,8 +63,9 @@ dependencies {
         api("org.openjfx:javafx-swing:$javaFXVersion:$platform")
         api("org.openjfx:javafx-web:$javaFXVersion:$platform")
     }
-    testImplementation(libs.junit.api)
-    testRuntimeOnly(libs.junit.engine)
+    testImplementation(platform(libs.junit.bom))
+    testImplementation(libs.junit.jupiter)
+    testRuntimeOnly(libs.junit.platform.launcher)
     testRuntimeOnly(libs.alchemist.incarnation.protelis)
 }
 
