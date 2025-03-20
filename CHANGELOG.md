@@ -1,3 +1,22 @@
+## [32.75.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.75.0...32.75.1) (2025-03-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.20 ([#475](https://github.com/AlchemistSimulator/alchemist-fxui/issues/475)) ([10a53e4](https://github.com/AlchemistSimulator/alchemist-fxui/commit/10a53e46258b95e9f24ebf79d9d439906bc3986b))
+* **deps:** update dependency com.github.spotbugs:spotbugs-annotations to v4.9.3 ([#467](https://github.com/AlchemistSimulator/alchemist-fxui/issues/467)) ([ff37649](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ff37649e930353e29d4d956a4b9439840cd45d9f))
+* **deps:** update dependency com.google.guava:guava to v33.4.5-jre ([#471](https://github.com/AlchemistSimulator/alchemist-fxui/issues/471)) ([6a6264a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6a6264a2460323515c53322f919582502061f919))
+* **deps:** update dependency org.controlsfx:controlsfx to v11.2.2 ([#473](https://github.com/AlchemistSimulator/alchemist-fxui/issues/473)) ([225472c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/225472cc867ed0d3277cb995af525ea75a7bc8e6))
+* **deps:** update dependency org.junit:junit-bom to v5.12.1 ([#466](https://github.com/AlchemistSimulator/alchemist-fxui/issues/466)) ([f441ad7](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f441ad7170317fc34ff548a565478e262fa3c912))
+* **deps:** update junit5 monorepo to v5.12.0 (minor) ([4f9f98c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4f9f98cfb0275f82808e1c1e38fc0249f105e877))
+* **deps:** update plugin java-qa to v1.103.0 ([0c7f24b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0c7f24bdace04c5fde72d7c74eaff47897dd7480))
+* **deps:** update plugin java-qa to v1.104.0 ([#468](https://github.com/AlchemistSimulator/alchemist-fxui/issues/468)) ([ce15eca](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ce15eca06bcddc65846da59ff88cc4193ccb880c))
+* **deps:** update plugin multijvmtesting to v3.2.4 ([#474](https://github.com/AlchemistSimulator/alchemist-fxui/issues/474)) ([ae60e43](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ae60e43d413cbb03c2c657702b696c6c8d532282))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.3.0 ([#469](https://github.com/AlchemistSimulator/alchemist-fxui/issues/469)) ([2b03683](https://github.com/AlchemistSimulator/alchemist-fxui/commit/2b03683b82d38069d867120c1f4a00b011cf3c28))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.13 ([#470](https://github.com/AlchemistSimulator/alchemist-fxui/issues/470)) ([28cecd4](https://github.com/AlchemistSimulator/alchemist-fxui/commit/28cecd4be1453652a3918e50f382579883210677))
+
 ## [32.75.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.74.0...32.75.0) (2025-03-14)
 
 ### Dependency updates
