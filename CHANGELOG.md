@@ -1,3 +1,17 @@
+## [32.76.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.75.1...32.76.0) (2025-03-25)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.0.3 ([#487](https://github.com/AlchemistSimulator/alchemist-fxui/issues/487)) ([186c4a7](https://github.com/AlchemistSimulator/alchemist-fxui/commit/186c4a79623fc5b69bfbfbeabc0a2d227a6f7087))
+* **deps:** update dependency com.google.guava:guava to v33.4.6-jre ([#480](https://github.com/AlchemistSimulator/alchemist-fxui/issues/480)) ([66f72c6](https://github.com/AlchemistSimulator/alchemist-fxui/commit/66f72c68f77022f393b5006ac57ca7918fe3b847))
+* **deps:** update plugin kotlin-qa to v0.78.1 ([#479](https://github.com/AlchemistSimulator/alchemist-fxui/issues/479)) ([c32961c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c32961cdaf464583964b02c9b7f7476938a700e5))
+* **deps:** update plugin kotlin-qa to v0.81.1 ([#483](https://github.com/AlchemistSimulator/alchemist-fxui/issues/483)) ([ecaff8e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/ecaff8e2b261e4379260aa7ec754f9664c18eaab))
+* **deps:** update plugin kotlin-qa to v0.82.0 ([#484](https://github.com/AlchemistSimulator/alchemist-fxui/issues/484)) ([6c38fa2](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6c38fa21d16df517dcc3ad0dae13fd6515f1d879))
+* **deps:** update plugin kotlin-qa to v0.84.1 ([#486](https://github.com/AlchemistSimulator/alchemist-fxui/issues/486)) ([c64c998](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c64c998cbd1aa17097dde1107ea9b465437b7dd8))
+* **deps:** update plugin multijvmtesting to v3.3.0 ([#478](https://github.com/AlchemistSimulator/alchemist-fxui/issues/478)) ([2a4484c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/2a4484cc74fff649cc15973732125464786345c5))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.22 ([#477](https://github.com/AlchemistSimulator/alchemist-fxui/issues/477)) ([dc3e58c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/dc3e58c5c95e0d399ba4f08b5a75e28b29f7027d))
+* **deps:** update plugin publishoncentral to v8.0.5 ([#476](https://github.com/AlchemistSimulator/alchemist-fxui/issues/476)) ([cc41beb](https://github.com/AlchemistSimulator/alchemist-fxui/commit/cc41bebcfe3b8c93004781a9ac925a0f69275f38))
+
 ## [32.75.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.75.0...32.75.1) (2025-03-20)
 
 ### Dependency updates
