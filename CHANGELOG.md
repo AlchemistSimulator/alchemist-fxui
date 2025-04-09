@@ -1,3 +1,14 @@
+## [32.80.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.79.0...32.80.0) (2025-04-09)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.0.7 ([#503](https://github.com/AlchemistSimulator/alchemist-fxui/issues/503)) ([09832c1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/09832c1c3305b5b1a980f7bd2d7572126018f01f))
+* **deps:** update dependency com.google.guava:guava to v33.4.7-jre ([#502](https://github.com/AlchemistSimulator/alchemist-fxui/issues/502)) ([b29c186](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b29c186e0fd80e1475ad79a387e8cfeb9d1b6d70))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.15 ([#500](https://github.com/AlchemistSimulator/alchemist-fxui/issues/500)) ([a37b549](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a37b549c7f435f66ece9a9f7234c97fd92b1c841))
+
 ## [32.79.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.78.0...32.79.0) (2025-04-09)
 
 ### Dependency updates
