@@ -1,3 +1,18 @@
+## [32.81.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.80.0...32.81.0) (2025-04-14)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.0.8 ([#509](https://github.com/AlchemistSimulator/alchemist-fxui/issues/509)) ([79c99d9](https://github.com/AlchemistSimulator/alchemist-fxui/commit/79c99d919c9db1051ebb98bd60ca5191effb9d50))
+* **deps:** update dependency org.danilopianini:gson-extras to v3.2.0 ([#507](https://github.com/AlchemistSimulator/alchemist-fxui/issues/507)) ([087cdb0](https://github.com/AlchemistSimulator/alchemist-fxui/commit/087cdb089d402fcf6bcf02b71b5bf70bb8576806))
+* **deps:** update dependency org.junit:junit-bom to v5.12.2 ([#506](https://github.com/AlchemistSimulator/alchemist-fxui/issues/506)) ([f9ae9ec](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f9ae9ec5a1dce69e8b1b27ddd7542b3988929be8))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.10.0 ([#505](https://github.com/AlchemistSimulator/alchemist-fxui/issues/505)) ([6658c7b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6658c7b8a1c2945224eb2bcfb56239bc54052a37))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.4.0 ([#508](https://github.com/AlchemistSimulator/alchemist-fxui/issues/508)) ([f4092d5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f4092d5b6f4d9ea39d6382f0f30fdb4269e4b3ff))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.16 ([#504](https://github.com/AlchemistSimulator/alchemist-fxui/issues/504)) ([7312890](https://github.com/AlchemistSimulator/alchemist-fxui/commit/73128902fa3a9e82f2a76ae74f4fc61db194e510))
+* **deps:** update dependency windows github actions runner to v2025 ([#501](https://github.com/AlchemistSimulator/alchemist-fxui/issues/501)) ([28ff7e4](https://github.com/AlchemistSimulator/alchemist-fxui/commit/28ff7e4129f25d022deab43fb431787b0334004d))
+
 ## [32.80.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.79.0...32.80.0) (2025-04-09)
 
 ### Dependency updates
