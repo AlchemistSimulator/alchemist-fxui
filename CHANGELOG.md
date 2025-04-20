@@ -1,3 +1,16 @@
+## [32.82.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.81.0...32.82.0) (2025-04-20)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.0.9 ([#514](https://github.com/AlchemistSimulator/alchemist-fxui/issues/514)) ([f20acdd](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f20acddefe0e8a9899c5e42e75bc5e4753c0bbf7))
+* **deps:** update dependency com.google.guava:guava to v33.4.8-jre ([#510](https://github.com/AlchemistSimulator/alchemist-fxui/issues/510)) ([db7d717](https://github.com/AlchemistSimulator/alchemist-fxui/commit/db7d71786ef33d94ad023e9e38163769a3590c6b))
+* **deps:** update plugin gitsemver to v5 ([#511](https://github.com/AlchemistSimulator/alchemist-fxui/issues/511)) ([bf4810a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/bf4810a4582cb42dfc0e67099c61877b28f5ee45))
+* **deps:** update plugin multijvmtesting to v3.4.0 ([#513](https://github.com/AlchemistSimulator/alchemist-fxui/issues/513)) ([761a998](https://github.com/AlchemistSimulator/alchemist-fxui/commit/761a998c1e268d7815c93b0c33708f9680652bd3))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.17 ([#512](https://github.com/AlchemistSimulator/alchemist-fxui/issues/512)) ([7794f86](https://github.com/AlchemistSimulator/alchemist-fxui/commit/7794f8688c525e66482acb56eedb5a15da3dbcdc))
+
 ## [32.81.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.80.0...32.81.0) (2025-04-14)
 
 ### Dependency updates
