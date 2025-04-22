@@ -12,7 +12,7 @@ alchemist-incarnation-protelis = { module = "it.unibo.alchemist:alchemist-incarn
 alchemist-loading = { module = "it.unibo.alchemist:alchemist-loading", version.ref = "alchemist" }
 alchemist-maps = { module = "it.unibo.alchemist:alchemist-maps", version.ref = "alchemist" }
 alchemist-ui-tooling = { module = "it.unibo.alchemist:alchemist-ui-tooling", version.ref = "alchemist" }
-apache-commons-collections4 = "org.apache.commons:commons-collections4:4.4"
+apache-commons-collections4 = "org.apache.commons:commons-collections4:4.5.0"
 controlsfx = "org.controlsfx:controlsfx:11.2.2"
 gson-extras = "org.danilopianini:gson-extras:3.2.0"
 guava = "com.google.guava:guava:33.4.8-jre"
