@@ -1,3 +1,11 @@
+## [32.83.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.82.0...32.83.0) (2025-04-23)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.1.0 ([#517](https://github.com/AlchemistSimulator/alchemist-fxui/issues/517)) ([00e4331](https://github.com/AlchemistSimulator/alchemist-fxui/commit/00e433156af11674344b78338dd235fca92ed958))
+* **deps:** update dependency org.apache.commons:commons-collections4 to v4.5.0 ([#516](https://github.com/AlchemistSimulator/alchemist-fxui/issues/516)) ([f581444](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f581444a0bddf3d4adb07f3e0909bad6b7a49513))
+* **deps:** update plugin java-qa to v1.109.0 ([#515](https://github.com/AlchemistSimulator/alchemist-fxui/issues/515)) ([cc98183](https://github.com/AlchemistSimulator/alchemist-fxui/commit/cc981830fa23d1f6c552d638b8018b7b62d4fadc))
+
 ## [32.82.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.81.0...32.82.0) (2025-04-20)
 
 ### Dependency updates
