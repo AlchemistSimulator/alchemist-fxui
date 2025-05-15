@@ -209,7 +209,7 @@ public abstract class AbstractEffectCell<T> extends ListCell<T> {
             throw new IllegalStateException("Empty cell: no item found");
         }
         final Dragboard dragboard = startDragAndDrop(TransferMode.MOVE);
-        final ClipboardContent content = new ClipboardContent();
+        final var content = new ClipboardContent();
         content.put(getDataFormat(), getItem());
         dragboard.setDragView(this.snapshot(null, null));
         dragboard.setContent(content);

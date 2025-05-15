@@ -20,6 +20,8 @@ import it.unibo.alchemist.model.Environment;
 import it.unibo.alchemist.model.Actionable;
 import it.unibo.alchemist.model.Position;
 import it.unibo.alchemist.model.Time;
+
+import java.io.Serial;
 import java.lang.ref.WeakReference;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
@@ -27,7 +29,6 @@ import javafx.application.Platform;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DialogPane;
-import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 import jiconfont.icons.google_material_design_icons.GoogleMaterialDesignIcons;
 import jiconfont.javafx.IconNode;
@@ -48,6 +49,7 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
     /**
      * Default serial version UID.
      */
+    @Serial
     private static final long serialVersionUID = 1L;
     /**
      * Default {@link Status#READY ready} or {@link Status#PAUSED paused} icon.
@@ -103,9 +105,6 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
                 setIcon(Status.PAUSED);
                 break;
             case TERMINATED:
-            default:
-                // Do nothing
-                break;
         }
     }
 
@@ -216,7 +215,7 @@ public class PlayPauseMonitor<T, P extends Position<? extends P>> extends JFXBut
                                 + current
                         );
                         final DialogPane dialogPane = alert.getDialogPane();
-                        dialogPane.setMinHeight(Region.USE_PREF_SIZE);
+                        dialogPane.setMinHeight(USE_PREF_SIZE);
                         ((Stage) dialogPane
                                 .getScene()
                                 .getWindow())

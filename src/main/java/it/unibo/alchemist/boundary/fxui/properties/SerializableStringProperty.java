@@ -19,6 +19,7 @@ import javafx.beans.property.StringPropertyBase;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serial;
 import java.io.Serializable;
 import java.lang.reflect.Type;
 import java.util.Objects;
@@ -26,10 +27,11 @@ import java.util.Objects;
 /**
  * {@link javafx.beans.property.SimpleStringProperty} that implements also {@link Serializable}.
  */
-public class SerializableStringProperty extends StringPropertyBase implements Serializable {
+public final class SerializableStringProperty extends StringPropertyBase implements Serializable {
     /**
      * Default Serial Version UID.
      */
+    @Serial
     private static final long serialVersionUID = 1L;
 
     private String name;
@@ -147,6 +149,7 @@ public class SerializableStringProperty extends StringPropertyBase implements Se
      *
      * @param out the output stream
      */
+    @Serial
     private void writeObject(final ObjectOutputStream out) throws IOException {
         out.writeUTF(this.getName());
         out.writeUTF(this.getValue());
@@ -171,6 +174,7 @@ public class SerializableStringProperty extends StringPropertyBase implements Se
      *
      * @param in the input stream
      */
+    @Serial
     private void readObject(final ObjectInputStream in) throws IOException, ClassNotFoundException {
         this.setName(in.readUTF());
         this.setValue(in.readUTF());

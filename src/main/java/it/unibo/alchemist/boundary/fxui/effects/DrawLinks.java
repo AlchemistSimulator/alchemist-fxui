@@ -27,6 +27,8 @@ import java.awt.Point;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serial;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentHashMap;
@@ -45,6 +47,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
     /**
      * Default serial version UID.
      */
+    @Serial
     private static final long serialVersionUID = 1L;
 
     /**
@@ -61,7 +64,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
      * Default {@code Color}.
      */
     private static final Color DEFAULT_COLOR = Color.BLACK;
-    private final transient ConcurrentHashMap<P, ConcurrentLinkedQueue<P>> positions;
+    private final transient Map<P, Queue<P>> positions;
     private RangedDoubleProperty size =
             PropertyFactory.getPercentageRangedProperty(ResourceLoader.getStringRes("drawdot_size"), DEFAULT_SIZE);
     private Color color = DEFAULT_COLOR;
@@ -123,7 +126,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
     protected <T> void storeData(final Environment<T, P> environment) {
         positions.clear();
         environment.forEach(node -> {
-            final ConcurrentLinkedQueue<P> neighbors = new ConcurrentLinkedQueue<>();
+            final var neighbors = new ConcurrentLinkedQueue<P>();
             environment.getNeighborhood(node)
                     .getNeighbors()
                     .stream()
@@ -234,6 +237,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
      *
      * @param stream the output stream
      */
+    @Serial
     private void writeObject(final ObjectOutputStream stream) throws IOException {
         stream.writeObject(size);
         ColorSerializationAdapter.writeColor(stream, getColor());
@@ -258,6 +262,7 @@ public class DrawLinks<P extends Position2D<? extends P>> extends AbstractEffect
      *
      * @param stream the input stream
      */
+    @Serial
     private void readObject(final ObjectInputStream stream) throws IOException, ClassNotFoundException {
         size = (RangedDoubleProperty) stream.readObject();
         color = ColorSerializationAdapter.readColor(stream);

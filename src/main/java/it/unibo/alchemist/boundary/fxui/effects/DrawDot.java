@@ -63,7 +63,7 @@ public class DrawDot<P extends Position2D<? extends P>> extends AbstractEffect<P
      * Default {@code Color}.
      */
     private static final Color DEFAULT_COLOR = Color.BLACK;
-    private final transient ConcurrentLinkedQueue<P> positions;
+    private final transient Queue<P> positions;
     private RangedDoubleProperty size = PropertyFactory.getPercentageRangedProperty(
             ResourceLoader.getStringRes("drawdot_size"),
             DEFAULT_SIZE

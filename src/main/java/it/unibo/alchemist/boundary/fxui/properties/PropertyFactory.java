@@ -12,10 +12,13 @@ package it.unibo.alchemist.boundary.fxui.properties;
 import it.unibo.alchemist.boundary.fxui.util.RangedDoubleProperty;
 import it.unibo.alchemist.model.SupportedIncarnations;
 import javafx.beans.property.ListProperty;
+import javafx.beans.property.ReadOnlyProperty;
 import javafx.beans.property.SetProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.beans.property.SimpleSetProperty;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.ObservableSet;
 
 /**
  * Factory for custom {@code Property}.
@@ -111,7 +114,7 @@ public final class PropertyFactory {
      * @param name the name to give to the property
      * @return the {@code ListProperty}
      */
-    public static ListProperty<String> getIncarnationsListProperty(final String name) {
+    public static ReadOnlyProperty<ObservableList<String>> getIncarnationsListProperty(final String name) {
         return new SimpleListProperty<>(
                 null,
                 name,
@@ -126,7 +129,7 @@ public final class PropertyFactory {
      * @param name the name to give to the property
      * @return the {@code SetProperty}
      */
-    public static SetProperty<String> getIncarnationsSetProperty(final String name) {
+    public static ReadOnlyProperty<ObservableSet<String>> getIncarnationsSetProperty(final String name) {
         return new SimpleSetProperty<>(
                 null,
                 name,

@@ -341,7 +341,7 @@ public final class EffectStack<P extends Position2D<? extends P>> implements Eff
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final EffectStack<?> other = (EffectStack<?>) obj;
+        final var other = (EffectStack<?>) obj;
         if (name == null) {
             if (other.name != null) {
                 return false;
