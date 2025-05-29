@@ -1,3 +1,14 @@
+## [32.87.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.86.0...32.87.0) (2025-05-29)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.2.2 ([#561](https://github.com/AlchemistSimulator/alchemist-fxui/issues/561)) ([0e88fdd](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0e88fddb88b7af73e206b031141000686f7fac55))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.130 ([#556](https://github.com/AlchemistSimulator/alchemist-fxui/issues/556)) ([89a3d31](https://github.com/AlchemistSimulator/alchemist-fxui/commit/89a3d31f5fcaa50186dbf6fcc751b7a8bb87d823))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.131 ([#557](https://github.com/AlchemistSimulator/alchemist-fxui/issues/557)) ([4964004](https://github.com/AlchemistSimulator/alchemist-fxui/commit/4964004a98d10d21990c5c4c6827fb9627812a16))
+* **deps:** update plugin com.gradle.develocity to v4.0.2 ([#558](https://github.com/AlchemistSimulator/alchemist-fxui/issues/558)) ([355fbae](https://github.com/AlchemistSimulator/alchemist-fxui/commit/355fbae24d3cc4e00efbd0a2b4dc515f6c5d7ff7))
+* **deps:** update plugin java-qa to v1.116.0 ([#559](https://github.com/AlchemistSimulator/alchemist-fxui/issues/559)) ([624285a](https://github.com/AlchemistSimulator/alchemist-fxui/commit/624285ad1e355b4a8bebff748e99365ed7b8090f))
+* **deps:** update plugin multijvmtesting to v3.5.0 ([#560](https://github.com/AlchemistSimulator/alchemist-fxui/issues/560)) ([e4004be](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e4004bec2cc03efccce226ff0b3b02cb6339ece6))
+
 ## [32.86.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.85.0...32.86.0) (2025-05-23)
 
 ### Dependency updates
