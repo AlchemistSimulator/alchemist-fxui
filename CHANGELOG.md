@@ -1,3 +1,17 @@
+## [32.88.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.87.1...32.88.0) (2025-07-10)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.2.4 ([#579](https://github.com/AlchemistSimulator/alchemist-fxui/issues/579)) ([60eeb6d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/60eeb6dfa7ce2a0f56e698fd4514c67767f45da1))
+* **deps:** update dependency org.junit:junit-bom to v5.13.3 ([#588](https://github.com/AlchemistSimulator/alchemist-fxui/issues/588)) ([6003a3d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/6003a3d625ad7d1923c1437b4a37440e5761b8d5))
+* **deps:** update plugin java-qa to v1.124.0 ([b03b5f7](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b03b5f776212e1deb0b314373642feeb7c746375))
+* **deps:** update plugin kotlin-qa to v0.91.0 ([#590](https://github.com/AlchemistSimulator/alchemist-fxui/issues/590)) ([05779df](https://github.com/AlchemistSimulator/alchemist-fxui/commit/05779df246249cc6137a52b39ed7f9f3f358fd9d))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.27 ([#572](https://github.com/AlchemistSimulator/alchemist-fxui/issues/572)) ([cd6a32b](https://github.com/AlchemistSimulator/alchemist-fxui/commit/cd6a32b58f82f3acf12db16c7f95e96c9ac1bf8d))
+
+### Build and continuous integration
+
+* do not release non stable versions ([e989c7f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e989c7f95cce226964b153f6df2be3c678f8af57))
+
 ## [32.87.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.87.0...32.87.1) (2025-07-10)
 
 ### Dependency updates
