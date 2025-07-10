@@ -1,3 +1,17 @@
+## [32.87.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.87.0...32.87.1) (2025-07-10)
+
+### Dependency updates
+
+* **deps:** update dependency org.junit:junit-bom to v5.13.0 ([#563](https://github.com/AlchemistSimulator/alchemist-fxui/issues/563)) ([47d0a38](https://github.com/AlchemistSimulator/alchemist-fxui/commit/47d0a3874757e143cd64f8aae2bff311ba4824ba))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.132 ([#562](https://github.com/AlchemistSimulator/alchemist-fxui/issues/562)) ([5dca612](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5dca612ee2cb85027d6a452a794381a5a3195bff))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.133 ([#567](https://github.com/AlchemistSimulator/alchemist-fxui/issues/567)) ([23cfa14](https://github.com/AlchemistSimulator/alchemist-fxui/commit/23cfa14ed803714fd61fddec91730455e20502f2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.136 ([#587](https://github.com/AlchemistSimulator/alchemist-fxui/issues/587)) ([fa8d118](https://github.com/AlchemistSimulator/alchemist-fxui/commit/fa8d1183a72bfff65d24922215fde958d575aa82))
+* **deps:** update plugin kotlin-qa to v0.89.0 ([#565](https://github.com/AlchemistSimulator/alchemist-fxui/issues/565)) ([b162e6e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/b162e6ede03c2bf4c72f7295b1d710557ad0cafe))
+
+### Bug Fixes
+
+* **release:** migrate to Maven Central Portal ([11caf38](https://github.com/AlchemistSimulator/alchemist-fxui/commit/11caf38a990da00daf442c516914377b2e88c90b))
+
 ## [32.87.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.86.0...32.87.0) (2025-05-29)
 
 ### Dependency updates
