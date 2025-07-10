@@ -35,10 +35,10 @@ public class ControlTypePopoverController implements Initializable {
     // FXML components
     @FXML
     @Nullable
-    private JFXButton panButton; // NOPMD Value injected by FXMLLoader
+    private JFXButton panButton;
     @FXML
     @Nullable
-    private JFXButton selectButton; // NOPMD Value injected by FXMLLoader
+    private JFXButton selectButton;
 
     /**
      * {@inheritDoc}

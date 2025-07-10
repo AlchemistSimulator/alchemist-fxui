@@ -20,6 +20,7 @@ import it.unibo.alchemist.model.Position2D;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serial;
 import java.util.Objects;
 
 import javafx.beans.property.DoubleProperty;
@@ -41,6 +42,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
     /**
      * Default generated Serial Version UID.
      */
+    @Serial
     private static final long serialVersionUID = 1L;
     /**
      * Default effect name.
@@ -114,7 +116,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
     }
 
     @Override
-    public final Color getColor() { // NOPMD - Only widening method visibility
+    public final Color getColor() {
         return super.getColor();
     }
 
@@ -282,6 +284,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
      *      the java.io.Serializable interface.
      * @throws IOException              if any exception thrown by the underlying OutputStream.
      */
+    @Serial
     private void writeObject(final ObjectOutputStream stream) throws IOException {
         stream.writeObject(red);
         stream.writeObject(green);
@@ -313,6 +316,7 @@ public class DrawColoredDot<P extends Position2D<? extends P>> extends DrawDot<P
      * @throws java.io.OptionalDataException    if primitive data was found in the stream instead of objects.
      * @throws IOException              if any of the usual Input/Output related exceptions.
      */
+    @Serial
     private void readObject(final ObjectInputStream stream) throws IOException, ClassNotFoundException {
         red = (RangedIntegerProperty) stream.readObject();
         green = (RangedIntegerProperty) stream.readObject();
