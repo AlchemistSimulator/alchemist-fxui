@@ -1,3 +1,16 @@
+## [32.88.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.88.0...32.88.1) (2025-07-10)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.0 ([#578](https://github.com/AlchemistSimulator/alchemist-fxui/issues/578)) ([d95ac12](https://github.com/AlchemistSimulator/alchemist-fxui/commit/d95ac12d055185667f11973ae3f937386b45453f))
+* **deps:** update dependency gradle to v8.14.3 ([#568](https://github.com/AlchemistSimulator/alchemist-fxui/issues/568)) ([f8af98d](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f8af98d7529e17e2e80bd1d882cf6212ab2c610a))
+* **deps:** update plugin gitsemver to v5.1.7 ([#569](https://github.com/AlchemistSimulator/alchemist-fxui/issues/569)) ([42b1571](https://github.com/AlchemistSimulator/alchemist-fxui/commit/42b15712685aecf0955f28d4c6364bbb5c9ba811))
+* **deps:** update plugin multijvmtesting to v3.5.4 ([#571](https://github.com/AlchemistSimulator/alchemist-fxui/issues/571)) ([f138dbe](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f138dbe45aa468e564e6c5e1f913978acd53c0e1))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4 ([#576](https://github.com/AlchemistSimulator/alchemist-fxui/issues/576)) ([e7b09bf](https://github.com/AlchemistSimulator/alchemist-fxui/commit/e7b09bf580dd85ba0d7908f7076c13f648dd847f))
+
 ## [32.88.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.87.1...32.88.0) (2025-07-10)
 
 ### Dependency updates
