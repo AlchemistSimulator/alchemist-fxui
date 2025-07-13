@@ -1,3 +1,13 @@
+## [32.89.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.88.1...32.89.0) (2025-07-13)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.2.5 ([#593](https://github.com/AlchemistSimulator/alchemist-fxui/issues/593)) ([195f73e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/195f73e569a7e65d17f863b2e592fb9900c7794c))
+* **deps:** update dependency org.danilopianini:thread-inheritable-resource-loader to v0.3.8 ([#589](https://github.com/AlchemistSimulator/alchemist-fxui/issues/589)) ([61a3eae](https://github.com/AlchemistSimulator/alchemist-fxui/commit/61a3eaece14b1a2eb0ee67f39d98bb5e094a3205))
+* **deps:** update node.js to 22.17 ([#583](https://github.com/AlchemistSimulator/alchemist-fxui/issues/583)) ([2935a97](https://github.com/AlchemistSimulator/alchemist-fxui/commit/2935a9734a9078bfcbacf8a6d4a8a0cb5b7e47e0))
+* **deps:** update plugin java-qa to v1.125.0 ([#591](https://github.com/AlchemistSimulator/alchemist-fxui/issues/591)) ([03387bf](https://github.com/AlchemistSimulator/alchemist-fxui/commit/03387bf6936ccbcd06fd383c334b921d7e1ccbde))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.28 ([#592](https://github.com/AlchemistSimulator/alchemist-fxui/issues/592)) ([8ed95cc](https://github.com/AlchemistSimulator/alchemist-fxui/commit/8ed95cc4e0d841ed171801f175f9d11c8aa9ed53))
+
 ## [32.88.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.88.0...32.88.1) (2025-07-10)
 
 ### Dependency updates
