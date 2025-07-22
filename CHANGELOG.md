@@ -1,3 +1,15 @@
+## [32.90.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.89.0...32.90.0) (2025-07-22)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.2.6 ([#600](https://github.com/AlchemistSimulator/alchemist-fxui/issues/600)) ([f0b357e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f0b357e1e9d0f920bfae25d49aaee79f15f6eacc))
+* **deps:** update dependency org.junit:junit-bom to v5.13.4 ([#599](https://github.com/AlchemistSimulator/alchemist-fxui/issues/599)) ([7cc8e7f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/7cc8e7fa8b38438174797bb81416b92cacee9449))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.137 ([#596](https://github.com/AlchemistSimulator/alchemist-fxui/issues/596)) ([9f21857](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9f218575b5f68e8396ae41b7aa129454434cd95d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.138 ([#597](https://github.com/AlchemistSimulator/alchemist-fxui/issues/597)) ([0b2e352](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0b2e3524451a54668d569d352835dc933b108379))
+* **deps:** update plugin com.gradle.develocity to v4.1 ([#595](https://github.com/AlchemistSimulator/alchemist-fxui/issues/595)) ([f072ed5](https://github.com/AlchemistSimulator/alchemist-fxui/commit/f072ed542171bc61b389a720cc5cd0b3b3e7ff47))
+* **deps:** update plugin multijvmtesting to v3.6.0 ([#598](https://github.com/AlchemistSimulator/alchemist-fxui/issues/598)) ([53c22fa](https://github.com/AlchemistSimulator/alchemist-fxui/commit/53c22fa259eba7089db5c4ccb5aef03fbe68bd20))
+* **deps:** update plugin publishoncentral to v9.0.8 ([#594](https://github.com/AlchemistSimulator/alchemist-fxui/issues/594)) ([5f2140c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/5f2140c60bc8812b23b8295391e205a97cd09f7b))
+
 ## [32.89.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.88.1...32.89.0) (2025-07-13)
 
 ### Dependency updates
