@@ -1,3 +1,17 @@
+## [32.97.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.96.0...32.97.0) (2025-09-06)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.2.16 ([#654](https://github.com/AlchemistSimulator/alchemist-fxui/issues/654)) ([a31a2f7](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a31a2f7c52b45ed35408dc90d905e45cc9ff6592))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.141 ([#655](https://github.com/AlchemistSimulator/alchemist-fxui/issues/655)) ([100f74f](https://github.com/AlchemistSimulator/alchemist-fxui/commit/100f74f72ec493510b04a57724fdd76f83a645a2))
+* **deps:** update node.js to 22.19 ([#651](https://github.com/AlchemistSimulator/alchemist-fxui/issues/651)) ([0d5362c](https://github.com/AlchemistSimulator/alchemist-fxui/commit/0d5362c5f39ad530fb4fb93b824cbd48f4f2f930))
+* **deps:** update plugin java-qa to v1.132.0 ([#652](https://github.com/AlchemistSimulator/alchemist-fxui/issues/652)) ([8455640](https://github.com/AlchemistSimulator/alchemist-fxui/commit/84556409307b3e8f3b11dd42c0eaa4df0ee5f01c))
+* **deps:** update plugin java-qa to v1.133.0 ([#653](https://github.com/AlchemistSimulator/alchemist-fxui/issues/653)) ([c292918](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c292918a173cd504651a287da9a02864f64dab15))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v5 ([#657](https://github.com/AlchemistSimulator/alchemist-fxui/issues/657)) ([154e466](https://github.com/AlchemistSimulator/alchemist-fxui/commit/154e4661a567905b6d657845d03d27f23aaf4e3e))
+
 ## [32.96.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.95.0...32.96.0) (2025-08-27)
 
 ### Dependency updates
