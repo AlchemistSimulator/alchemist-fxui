@@ -1,3 +1,13 @@
+## [32.101.1](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.101.0...32.101.1) (2025-09-10)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.20 ([#666](https://github.com/AlchemistSimulator/alchemist-fxui/issues/666)) ([a988917](https://github.com/AlchemistSimulator/alchemist-fxui/commit/a988917c10975dec08453f7df28f3857fb726b28))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.7 ([#665](https://github.com/AlchemistSimulator/alchemist-fxui/issues/665)) ([3f317af](https://github.com/AlchemistSimulator/alchemist-fxui/commit/3f317afe4e7ba824386d8fb66ea99db7f198807b))
+
 ## [32.101.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.100.0...32.101.0) (2025-09-08)
 
 ### Dependency updates
