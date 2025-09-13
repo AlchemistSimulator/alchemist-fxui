@@ -1,3 +1,12 @@
+## [32.103.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.102.0...32.103.0) (2025-09-13)
+
+### Dependency updates
+
+* **api-deps:** update alchemist to v42.3.4 ([#675](https://github.com/AlchemistSimulator/alchemist-fxui/issues/675)) ([9bdc5a1](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9bdc5a106709456bedb7c1174a0ddf3f29eca898))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.142 ([#673](https://github.com/AlchemistSimulator/alchemist-fxui/issues/673)) ([9e369ae](https://github.com/AlchemistSimulator/alchemist-fxui/commit/9e369ae2de83c786918da37f89b4c97f6872130a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.143 ([#674](https://github.com/AlchemistSimulator/alchemist-fxui/issues/674)) ([43d6d6e](https://github.com/AlchemistSimulator/alchemist-fxui/commit/43d6d6e9eec92612f747ec9c9a26342e76f3f06d))
+* **deps:** update plugin kotlin-qa to v0.95.0 ([#677](https://github.com/AlchemistSimulator/alchemist-fxui/issues/677)) ([c871b87](https://github.com/AlchemistSimulator/alchemist-fxui/commit/c871b875f8cea169e9c3a99e598bba47fe85d0c6))
+
 ## [32.102.0](https://github.com/AlchemistSimulator/alchemist-fxui/compare/32.101.1...32.102.0) (2025-09-11)
 
 ### Dependency updates
